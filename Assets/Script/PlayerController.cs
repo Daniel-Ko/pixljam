@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
     private bool grounded;
     private bool doubleJumped;
 
+    public float airSpeedMult=.3f;
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
@@ -45,7 +46,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (absValueX < playerSpeed)
             {
-                forceX = playerSpeed;
+                forceX = grounded ? playerSpeed: (playerSpeed*airSpeedMult);
             }
             transform.localScale = new Vector3(2, 2, 1);
         }
@@ -53,7 +54,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (absValueX < playerSpeed)
             {
-                forceX = -playerSpeed;
+                forceX = grounded ? -playerSpeed : (-playerSpeed * airSpeedMult);
             }
             transform.localScale = new Vector3(-2, 2, 1);
         }
@@ -65,21 +66,20 @@ public class PlayerController : MonoBehaviour {
         }
 
         //JUMPING
-        if (Input.GetKey(KeyCode.Space) && grounded)
+        if (Input.GetKey(KeyCode.Space) && grounded )
         {
-            if(absValueY<playerSpeed)jump();
+            if (absValueY < flyingSpeed)
+            {
+                //forceY = flyingSpeed;
+                //anim.SetBool("Jumping", true);
+                GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, flyingSpeed);
+                //if we have ^^ then the mass wont effect the jump therefore might work better to do fourceY=..
+            }
         }
         GetComponent<Rigidbody2D>().AddForce(new Vector2(forceX,forceY));
         anim.SetFloat("speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
     }
 
-    public void jump()
-    {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, flyingSpeed);
-
-        //update animation
-        anim.SetBool("Jumping", true);
-    }
 
     public void feedKiwi(int kiwiWeight) {
         totalKiwis += kiwiWeight;

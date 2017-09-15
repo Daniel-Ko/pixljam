@@ -108,6 +108,52 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &137903693
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4270646800375808, guid: 0656e9d237dce7049a537856753cd0cf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.0131218
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270646800375808, guid: 0656e9d237dce7049a537856753cd0cf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270646800375808, guid: 0656e9d237dce7049a537856753cd0cf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270646800375808, guid: 0656e9d237dce7049a537856753cd0cf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270646800375808, guid: 0656e9d237dce7049a537856753cd0cf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270646800375808, guid: 0656e9d237dce7049a537856753cd0cf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270646800375808, guid: 0656e9d237dce7049a537856753cd0cf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270646800375808, guid: 0656e9d237dce7049a537856753cd0cf, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352650845124664, guid: 0656e9d237dce7049a537856753cd0cf, type: 2}
+      propertyPath: m_Name
+      value: ground (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0656e9d237dce7049a537856753cd0cf, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &633037895
 Prefab:
   m_ObjectHideFlags: 0
@@ -145,7 +191,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4396606570199514, guid: ec8500d711dd38944917148247c69afa, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1072209941269348, guid: ec8500d711dd38944917148247c69afa, type: 2}
       propertyPath: m_Name
