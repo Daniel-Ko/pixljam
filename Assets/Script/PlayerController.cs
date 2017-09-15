@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
     public float playerSpeed;
     public float flyingSpeed;
-
+    public float airSpeedMult = .3f;
 
     private Animator anim;
     private int totalKiwis;
@@ -17,7 +17,9 @@ public class PlayerController : MonoBehaviour {
     private bool grounded;
     private bool doubleJumped;
 
-    public float airSpeedMult=.3f;
+    //Kiwi and bird interaction fields
+    private bool isCarryingKiwi;
+    
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
@@ -66,13 +68,13 @@ public class PlayerController : MonoBehaviour {
         }
 
         //JUMPING
-        if (Input.GetKey(KeyCode.Space) && grounded )
+        if (Input.GetKey(KeyCode.Space)  )
         {
             if (absValueY < flyingSpeed)
             {
-                //forceY = flyingSpeed;
+                forceY = flyingSpeed;
                 //anim.SetBool("Jumping", true);
-                GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, flyingSpeed);
+                //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, flyingSpeed);
                 //if we have ^^ then the mass wont effect the jump therefore might work better to do fourceY=..
             }
         }
@@ -80,8 +82,16 @@ public class PlayerController : MonoBehaviour {
         anim.SetFloat("speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
     }
 
-
+    /*
+       called by collectable kiwifruit 
+       increments the kiwis weight by the weight of the kiwi     
+    */
     public void feedKiwi(int kiwiWeight) {
         totalKiwis += kiwiWeight;
     }
+
+    public void carryingCheck(bool carry) {
+        isCarryingKiwi = carry;
+    }
+
 }

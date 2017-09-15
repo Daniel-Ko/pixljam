@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 58538032538013086}
   m_Layer: 0
   m_Name: player
-  m_TagString: Player
+  m_TagString: Bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,12 +221,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 12
   flyingSpeed: 8
+  airSpeedMult: 0.3
   groundCheck: {fileID: 4627059826268812}
   groundCheckRadius: 0.2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  airSpeedMult: 0.3
 --- !u!124 &124793242695982642
 Behaviour:
   m_ObjectHideFlags: 1
