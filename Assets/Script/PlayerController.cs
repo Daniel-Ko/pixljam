@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     public float playerSpeed;
-    public float jumpHeight;
+    public float flyingSpeed;
 
 
     private Animator anim;
-
+    private int totalKiwis;
 
     //ground stuff
     public Transform groundCheck;
@@ -28,26 +28,34 @@ public class PlayerController : MonoBehaviour {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
         if (grounded) anim.SetBool("Jumping", false);
 
-        anim.SetFloat("falling", GetComponent<Rigidbody2D>().velocity.y);
+        //anim.SetFloat("falling", GetComponent<Rigidbody2D>().velocity.y);
 
     }
 
     // Update is called once per frame
     void Update () {
-
+        float forceY = 0f;
+        float forceX = 0f;
+        float absValueX = GetComponent<Rigidbody2D>().velocity.x;
         float absValueY = GetComponent<Rigidbody2D>().velocity.y;
         if (grounded) 
             doubleJumped = false;
 
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
+            if (absValueX < playerSpeed)
+            {
+                forceX = playerSpeed;
+            }
             transform.localScale = new Vector3(2, 2, 1);
-            GetComponent<Rigidbody2D>().velocity = new Vector2(playerSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
+            if (absValueX < playerSpeed)
+            {
+                forceX = -playerSpeed;
+            }
             transform.localScale = new Vector3(-2, 2, 1);
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-playerSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
 
         //Crouching
@@ -59,20 +67,21 @@ public class PlayerController : MonoBehaviour {
         //JUMPING
         if (Input.GetKey(KeyCode.Space) && grounded)
         {
-            jump();
+            if(absValueY<playerSpeed)jump();
         }
-        if (Input.GetKey(KeyCode.Space) && !grounded && !doubleJumped)
-        {
-            jump();
-            doubleJumped = true;
-        }
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(forceX,forceY));
         anim.SetFloat("speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
     }
+
     public void jump()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, flyingSpeed);
 
         //update animation
         anim.SetBool("Jumping", true);
+    }
+
+    public void feedKiwi(int kiwiWeight) {
+        totalKiwis += kiwiWeight;
     }
 }
