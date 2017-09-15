@@ -19,14 +19,24 @@ public class PlayerController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        anim = GetComponent<Animator>();
+    }
+
+    //runs every n times a frame
+    void FixedUpdate()
+    {
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+        if (grounded) anim.SetBool("Jumping", false);
+
+        anim.SetFloat("falling", GetComponent<Rigidbody2D>().velocity.y);
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 
         float absValueY = GetComponent<Rigidbody2D>().velocity.y;
-        if (grounded)
+        if (grounded) 
             doubleJumped = false;
 
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
@@ -56,6 +66,7 @@ public class PlayerController : MonoBehaviour {
             jump();
             doubleJumped = true;
         }
+        anim.SetFloat("speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
     }
     public void jump()
     {
