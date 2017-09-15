@@ -5,10 +5,11 @@ using UnityEngine;
 public class FruitPickup : MonoBehaviour {
 
     public int weight;
+    public LevelManager levelManager;
 
 	// Use this for initialization
 	void Start () {
-		
+        levelManager = FindObjectOfType<LevelManager>();
 	}
 	
 	// Update is called once per frame
@@ -21,8 +22,9 @@ public class FruitPickup : MonoBehaviour {
         PlayerController script = other.GetComponent<PlayerController>();
         //if (other.tag == "Kiwi") {
             script.feedKiwi(weight);
+            
+            levelManager.PlayKiwiParticleAnimation(gameObject.transform.position, gameObject.transform.rotation);
             /*
-            levelManager.PlayFruitAnimation();
             ScoreManager.AddPoints(pointsToAdd);
             eatSoundEffect.Play();
             */
