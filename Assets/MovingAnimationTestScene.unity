@@ -150,67 +150,16 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a982a5f9b82552f4593d18fa387fb959, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &12714857
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1939555599}
-    m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.924075
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -5.840914
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654944855883862, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_Name
-      value: Kiwifruit (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
-        type: 2}
-      propertyPath: kiwifruitSoundEffect
-      value: 
-      objectReference: {fileID: 1939555598}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &101232105 stripped
+--- !u!4 &310768930 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
+  m_PrefabParentObject: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef,
     type: 2}
-  m_PrefabInternal: {fileID: 948740879}
---- !u!4 &335659053 stripped
+  m_PrefabInternal: {fileID: 2100900662}
+--- !u!4 &382240245 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
+  m_PrefabParentObject: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f,
     type: 2}
-  m_PrefabInternal: {fileID: 394037146}
+  m_PrefabInternal: {fileID: 1089000753}
 --- !u!1001 &385306627
 Prefab:
   m_ObjectHideFlags: 0
@@ -253,62 +202,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a8926ca26511984da683cf5808debf3, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &394037146
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1939555599}
-    m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.9700003
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -7.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654944855883862, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_Name
-      value: Kiwifruit (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
-        type: 2}
-      propertyPath: kiwifruitSoundEffect
-      value: 
-      objectReference: {fileID: 1939555598}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &414486223 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1604004587}
 --- !u!1 &487473610
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,159 +309,6 @@ Prefab:
     - {fileID: 60101403698428570, guid: 1ae0f82ebea82244588368e47064a6ef, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1ae0f82ebea82244588368e47064a6ef, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &496234200
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1939555599}
-    m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.3474913
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -7.1410885
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654944855883862, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_Name
-      value: Kiwifruit (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
-        type: 2}
-      propertyPath: kiwifruitSoundEffect
-      value: 
-      objectReference: {fileID: 1939555598}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &502360115
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1939555599}
-    m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -6.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654944855883862, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_Name
-      value: Kiwifruit (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
-        type: 2}
-      propertyPath: kiwifruitSoundEffect
-      value: 
-      objectReference: {fileID: 1939555598}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &508725932
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1939555599}
-    m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -6.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654944855883862, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_Name
-      value: Kiwifruit (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
-        type: 2}
-      propertyPath: kiwifruitSoundEffect
-      value: 
-      objectReference: {fileID: 1939555598}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &524727997
 Prefab:
   m_ObjectHideFlags: 0
@@ -611,11 +351,156 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b9a9c224de94604ab31f56b017f3787, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &662496177 stripped
+--- !u!1001 &542413735
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1939555599}
+    m_Modifications:
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114589639026372086, guid: a8c8a2f6dda8b2548b238ee32b89b9ef,
+        type: 2}
+      propertyPath: kiwifruitSoundEffect
+      value: 
+      objectReference: {fileID: 1939555598}
+    - target: {fileID: 1073419649158638, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_Name
+      value: Kiwifruit_Right (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &584884762
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1939555599}
+    m_Modifications:
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114511936948577898, guid: 41ccb46da1107c8439f44c50a93e746f,
+        type: 2}
+      propertyPath: kiwifruitSoundEffect
+      value: 
+      objectReference: {fileID: 1939555598}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &605793013
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1939555599}
+    m_Modifications:
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 10.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114589639026372086, guid: a8c8a2f6dda8b2548b238ee32b89b9ef,
+        type: 2}
+      propertyPath: kiwifruitSoundEffect
+      value: 
+      objectReference: {fileID: 1939555598}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &750455449 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
+  m_PrefabParentObject: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef,
     type: 2}
-  m_PrefabInternal: {fileID: 1268427752}
+  m_PrefabInternal: {fileID: 605793013}
 --- !u!1001 &799761438
 Prefab:
   m_ObjectHideFlags: 0
@@ -662,11 +547,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8165912d8755bc749a6264900bcb3254, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &821096127 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1125893810}
 --- !u!1 &889740156
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,123 +601,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!1001 &948740879
+--- !u!1001 &1089000753
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1939555599}
     m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.71
+      value: 8.06
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -7.11
+      value: -7.66
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1654944855883862, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_Name
-      value: Kiwifruit (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
+    - target: {fileID: 114511936948577898, guid: 41ccb46da1107c8439f44c50a93e746f,
         type: 2}
       propertyPath: kiwifruitSoundEffect
       value: 
       objectReference: {fileID: 1939555598}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &967297672 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 496234200}
---- !u!4 &994051610 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 2015762105}
---- !u!1001 &1125893810
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1939555599}
-    m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -7.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654944855883862, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 1542339288407878, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
       propertyPath: m_Name
-      value: Kiwifruit (7)
+      value: Kiwifruit_Left (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
-        type: 2}
-      propertyPath: kiwifruitSoundEffect
-      value: 
-      objectReference: {fileID: 1939555598}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 41ccb46da1107c8439f44c50a93e746f, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1154724496 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 502360115}
 --- !u!1 &1241065790
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,57 +751,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b9a9c224de94604ab31f56b017f3787, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1268427752
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1939555599}
-    m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.4887114
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -6.5649195
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654944855883862, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_Name
-      value: Kiwifruit (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
-        type: 2}
-      propertyPath: kiwifruitSoundEffect
-      value: 
-      objectReference: {fileID: 1939555598}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1362700240
 Prefab:
@@ -1539,62 +1302,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 513ebe71661d197479c538c0d730eea1, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1604004587
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1939555599}
-    m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -7.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654944855883862, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_Name
-      value: Kiwifruit (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
-        type: 2}
-      propertyPath: kiwifruitSoundEffect
-      value: 
-      objectReference: {fileID: 1939555598}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1662903441 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1915175195}
 --- !u!1 &1795973452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,11 +1355,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4396606570199514, guid: ec8500d711dd38944917148247c69afa, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 16.36
+      value: 21.41
       objectReference: {fileID: 0}
     - target: {fileID: 4396606570199514, guid: ec8500d711dd38944917148247c69afa, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.74
+      value: 4.01
       objectReference: {fileID: 0}
     - target: {fileID: 4396606570199514, guid: ec8500d711dd38944917148247c69afa, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1699,57 +1406,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec8500d711dd38944917148247c69afa, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1801386066
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1939555599}
-    m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -6.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654944855883862, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_Name
-      value: Kiwifruit (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
-        type: 2}
-      propertyPath: kiwifruitSoundEffect
-      value: 
-      objectReference: {fileID: 1939555598}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-  m_IsPrefabParent: 0
+--- !u!4 &1806743943 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef,
+    type: 2}
+  m_PrefabInternal: {fileID: 542413735}
 --- !u!1 &1815955753 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1752321808513940, guid: a982a5f9b82552f4593d18fa387fb959,
@@ -2066,62 +1727,6 @@ PolygonCollider2D:
       - {x: -4.37, y: -2.9399998}
       - {x: -4.23, y: -2.6499999}
       - {x: -4.23, y: -2.6299999}
---- !u!1001 &1915175195
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1939555599}
-    m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -7.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654944855883862, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-      propertyPath: m_Name
-      value: Kiwifruit (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
-        type: 2}
-      propertyPath: kiwifruitSoundEffect
-      value: 
-      objectReference: {fileID: 1939555598}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1934916306 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 508725932}
 --- !u!1 &1939555597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2228,75 +1833,67 @@ Transform:
   m_LocalPosition: {x: 14.025363, y: 9.024006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 662496177}
-  - {fileID: 967297672}
-  - {fileID: 994051610}
-  - {fileID: 1944134070}
-  - {fileID: 1154724496}
-  - {fileID: 335659053}
-  - {fileID: 414486223}
-  - {fileID: 821096127}
-  - {fileID: 1934916306}
-  - {fileID: 1662903441}
-  - {fileID: 1975233253}
-  - {fileID: 101232105}
+  - {fileID: 2123292127}
+  - {fileID: 750455449}
+  - {fileID: 1806743943}
+  - {fileID: 310768930}
+  - {fileID: 382240245}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1944134070 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 12714857}
---- !u!4 &1975233253 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1801386066}
---- !u!1001 &2015762105
+--- !u!1001 &2100900662
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1939555599}
     m_Modifications:
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.15
+      value: 12.57
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -7.66
+      value: -7.48
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4908799197541002, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+    - target: {fileID: 4006390278123510, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114089130174475542, guid: fada5c5cd120b274db904f792c5076b7,
+    - target: {fileID: 114589639026372086, guid: a8c8a2f6dda8b2548b238ee32b89b9ef,
         type: 2}
       propertyPath: kiwifruitSoundEffect
       value: 
       objectReference: {fileID: 1939555598}
+    - target: {fileID: 1073419649158638, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
+      propertyPath: m_Name
+      value: Kiwifruit_Right (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fada5c5cd120b274db904f792c5076b7, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: a8c8a2f6dda8b2548b238ee32b89b9ef, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &2123292127 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4397013386604138, guid: 41ccb46da1107c8439f44c50a93e746f,
+    type: 2}
+  m_PrefabInternal: {fileID: 584884762}
