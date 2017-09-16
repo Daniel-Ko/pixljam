@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour {
     public float groundCheckRadius;
     public LayerMask whatIsGround;
     private bool grounded;
+    //extra ground
+    private Transform initGroundCheck;
 
     // An object need to closer than that distance to be picked up.
     public float pickUpDist = 1f;
@@ -27,12 +29,23 @@ public class PlayerController : MonoBehaviour {
     void Start () {
         anim = GetComponent<Animator>();
         playersRigidbody = GetComponent<Rigidbody2D>();
+        initGroundCheck = groundCheck;
     }
 
     //runs every n times a frame
     void FixedUpdate()
     {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+        Debug.Log(groundCheck);
+        //if carrying change ground check to the kiwi
+        if (carriedObject != null && carriedObject.tag == "Kiwi")
+        {
+            KiwiController kiwiScript = carriedObject.GetComponent<KiwiController>();
+            grounded = kiwiScript.kiwi_grounded;
+        }
+        else {
+            groundCheck = initGroundCheck;
+        }
         //if (grounded) anim.SetBool("Jumping", false);
         //anim.SetFloat("falling", GetComponent<Rigidbody2D>().velocity.y);
 
@@ -84,13 +97,13 @@ public class PlayerController : MonoBehaviour {
 
 
         //JUMPING
-        if (Input.GetKey(KeyCode.Space)  )
+        if (Input.GetKey(KeyCode.Space) && grounded )
         {
             if (absValueY < flyingSpeed)
             {
-                forceY = flyingSpeed;
+                //forceY = flyingSpeed;
                 //anim.SetBool("Jumping", true);
-                //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, flyingSpeed);
+                GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, flyingSpeed);
                 //if we have ^^ then the mass wont effect the jump therefore might work better to do fourceY=..
             }
         }
@@ -147,11 +160,13 @@ public class PlayerController : MonoBehaviour {
         bool canPickUp = Physics2D.OverlapCircle(transform.position, pickUpDist, pickupLayer);
         Collider2D c = Physics2D.OverlapCircle(transform.position, pickUpDist, pickupLayer);
 
+        Debug.Log(canPickUp);
         if (canPickUp)
             carriedObject = c.transform;
-
+        
         if (carriedObject != null)
         {
+            Debug.Log("picked uup");
             //Set the box in front of character
             Destroy(carriedObject.GetComponent<Rigidbody2D>());
             carriedObject.parent = transform;

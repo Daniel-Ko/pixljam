@@ -16,6 +16,13 @@ public class KiwiController : MonoBehaviour {
   
     //Main players script
     private  PlayerController player_script;
+
+    //for switching between player and kiwis ground checks
+
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask whatIsGround;
+    public bool kiwi_grounded;
     // Use this for initialization
     void Start () {
         player_script = GameObject.Find("player").GetComponent <PlayerController> ();
@@ -24,13 +31,12 @@ public class KiwiController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKey(KeyCode.Z)) {
-            Debug.Log("WORKED");
             totalWeight = 10;
         }
     }
 
     void FixedUpdate() {
-       
+        kiwi_grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
         if (totalWeight >= 10) {
             bounceMode = true;
         }
@@ -45,12 +51,10 @@ public class KiwiController : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Platform")
         {
-            Debug.Log("Here y'all");
-            Debug.Log(bounceMode);
             if (bounceMode)
             {
                 Vector2 dir = (Vector2)transform.position;
-                Vector2 bounceDir = new Vector2(dir.x, dir.y * 1000);
+                Vector2 bounceDir = new Vector2(dir.x, dir.y * 250);
                 //gameObject.GetComponent<Rigidbody2D>().AddForce(bounceDir);
                 player_script.GetComponent<Rigidbody2D>().AddForce(bounceDir);
                 totalWeight = 0;
