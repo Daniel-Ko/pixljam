@@ -11,6 +11,7 @@ public class FruitPickup : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         levelManager = FindObjectOfType<LevelManager>();
+        kiwifruitSoundEffect = FindObjectOfType<AudioSource>();
 	}
 	
 	// Update is called once per frame
