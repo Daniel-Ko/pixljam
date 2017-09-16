@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikePlatform : MonoBehaviour {
+public class SpikePlatform : MonoBehaviour
+{
 
 	// Spike at the top or bottom.
 	public bool top;
@@ -10,22 +11,24 @@ public class SpikePlatform : MonoBehaviour {
 	public AudioClip bounceClip;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
 
 	}
-		
-	void OnCollisionEnter2D(Collision2D other) {
+
+	void OnCollisionEnter2D (Collision2D other)
+	{
 
 		bool collided = false;
+		ContactPoint2D contact = other.contacts [0];
 
-		if (other.collider.CompareTag("Bird") ||other.collider.CompareTag("Kiwi")){
-
-			ContactPoint2D contact = other.contacts [0];
+		if (other.collider.CompareTag ("Bird") || other.collider.CompareTag ("Kiwi")) {
 			// top is true if the spike is at the top.
 			if (top) {
 				// Collision is from the top.
@@ -40,25 +43,43 @@ public class SpikePlatform : MonoBehaviour {
 					collided = true;
 				}
 			}
-
-			if (collided) {
-				// Calculate angle between collision point and player.
-				Vector2 platform = (Vector2)transform.position;
-				Vector2 dir = contact.point - platform;
-
-				// Get the opposite vector and normalized it.
-				dir = -dir.normalized;
-
-				// Player bounce back.
-				other.gameObject.GetComponent<Rigidbody2D> ().AddForce (dir * bounceBackForce);
-
-				// Bounce back sound.
-				if (bounceClip) {
-					AudioSource.PlayClipAtPoint (bounceClip, transform.position);
-				}
-			}
 				
 		}
+
+		if (collided) {
+			StartCoroutine (bounceBack (other, contact));
+		}
+	}
+
+	public IEnumerator bounceBack (Collision2D other, ContactPoint2D contact)
+	{
+
+		float timer = 0;
+		float bounceDuration = 0.01f;
+
+		// Calculate angle between collision point and player.
+		Vector2 platform = (Vector2)transform.position;
+		Vector2 dir = contact.point - platform;
+
+		// Get the opposite vector and normalized it.
+		dir = -dir.normalized;
+
+		while (timer < bounceDuration) {
+			timer += Time.deltaTime;
+
+			// Player bounce back and flash red.
+			other.gameObject.GetComponent<Rigidbody2D> ().AddForce (dir * bounceBackForce);
+			other.gameObject.GetComponent<Animation> ().Play ("HurtAnimation");
+		}
+			
+		// Bounce back sound.
+		if (bounceClip) {
+			AudioSource.PlayClipAtPoint (bounceClip, transform.position);
+		}
+
+		yield return 0;
+
+
 	}
 		
 }
