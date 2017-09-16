@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
     private bool grounded;
 
     // An object need to closer than that distance to be picked up.
-    public float pickUpDist = 0.5f;
+    public float pickUpDist = 1f;
     private Transform carriedObject = null;
     public LayerMask pickupLayer;
 
@@ -34,8 +34,10 @@ public class PlayerController : MonoBehaviour {
     {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
         //if (grounded) anim.SetBool("Jumping", false);
-
         //anim.SetFloat("falling", GetComponent<Rigidbody2D>().velocity.y);
+
+        //update RigidedBody2D as totalWeight increase
+        updateMassOfThisBasedOnCarried();
 
     }
     // Update is called once per frame
@@ -99,9 +101,6 @@ public class PlayerController : MonoBehaviour {
        called by collectable kiwifruit 
        increments the kiwis weight by the weight of the kiwi     
     */
-    public void feedKiwi(int kiwiWeight) {
-        totalWeight += kiwiWeight;
-    }
 
     public void hurtPlayer(int damage) {
         Debug.Log("Ouch");
@@ -110,6 +109,12 @@ public class PlayerController : MonoBehaviour {
 
 	public int weight() {
         return totalWeight;
+    }
+
+    private void updateMassOfThisBasedOnCarried() {
+        KiwiController script = carriedObject.gameObject.GetComponent<KiwiController>();
+        float weightOfKiwi = script.totalWeight;
+        GetComponent<Rigidbody2D>().mass = (weightOfKiwi * 0.15f);
     }
 
     /*Methods involving interacting with Kiwi*/
