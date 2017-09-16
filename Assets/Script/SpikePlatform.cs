@@ -6,6 +6,7 @@ public class SpikePlatform : MonoBehaviour {
 
 	// Spike at the top or bottom.
 	public bool top;
+	public int bounceBackForce = 200;
 
 	// Use this for initialization
 	void Start () {
@@ -33,6 +34,16 @@ public class SpikePlatform : MonoBehaviour {
 					other.gameObject.SendMessage ("hurtPlayer", 1);
 				}
 			}
+
+			// Calculate angle between collision point and player.
+			Vector2 platform = (Vector2) transform.position;
+			Vector2 dir = contact.point - platform;
+
+			// Get the opposite vector and normalized it.
+			dir = -dir.normalized;
+
+			// Player bounce back.
+			other.gameObject.GetComponent<Rigidbody2D>().AddForce (dir * bounceBackForce);
 				
 		}
 	}
