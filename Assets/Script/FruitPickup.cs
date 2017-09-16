@@ -6,6 +6,7 @@ public class FruitPickup : MonoBehaviour {
 
     public int weight;
     public LevelManager levelManager;
+    public AudioSource kiwifruitSoundEffect;
 
 	// Use this for initialization
 	void Start () {
@@ -20,15 +21,12 @@ public class FruitPickup : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
         if (other.GetComponent<PlayerController>() == null) return;
         PlayerController script = other.GetComponent<PlayerController>();
-        //if (other.tag == "Kiwi") {
-            script.feedKiwi(weight);
-            
-            levelManager.PlayKiwiParticleAnimation(gameObject.transform.position, gameObject.transform.rotation);
+        script.feedKiwi(weight);      
+        levelManager.PlayKiwiParticleAnimation(gameObject.transform.position, gameObject.transform.rotation);
+        kiwifruitSoundEffect.Play();
             /*
             ScoreManager.AddPoints(pointsToAdd);
-            eatSoundEffect.Play();
             */
-            Destroy(gameObject);
-        //}
+        Destroy(gameObject);
     }
 }
