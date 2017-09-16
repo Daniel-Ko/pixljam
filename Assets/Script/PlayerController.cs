@@ -112,9 +112,12 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void updateMassOfThisBasedOnCarried() {
-        KiwiController script = carriedObject.gameObject.GetComponent<KiwiController>();
-        float weightOfKiwi = script.totalWeight;
-        GetComponent<Rigidbody2D>().mass = (weightOfKiwi * 0.15f);
+        if (carriedObject != null)
+        {
+            KiwiController script = carriedObject.gameObject.GetComponent<KiwiController>();
+            float weightOfKiwi = script.totalWeight;
+            GetComponent<Rigidbody2D>().mass = (weightOfKiwi * 0.15f);
+        }
     }
 
     /*Methods involving interacting with Kiwi*/
@@ -149,4 +152,5 @@ public class PlayerController : MonoBehaviour {
             carriedObject.localPosition = new Vector3(0, -0.6f, 1f); // Might need to change that
         }
     }
+
 }

@@ -22,7 +22,7 @@ public class FruitPickup : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
         if (other.GetComponent<PlayerController>() == null) return;
         PlayerController script = other.GetComponent<PlayerController>();
-        script.feedKiwi(weight);      
+        script.feedKiwi(weight);   
         levelManager.PlayKiwiParticleAnimation(gameObject.transform.position, gameObject.transform.rotation);
         
         kiwifruitSoundEffect.Play();
