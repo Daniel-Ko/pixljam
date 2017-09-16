@@ -19,5 +19,6 @@ public class Checkpoint : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.GetComponent<PlayerController>() == null) return;
         levelManager.currentCheckpoint = gameObject;
+        levelManager.PlayKiwiParticleAnimation(gameObject.transform.position, gameObject.transform.rotation);
     }
 }
