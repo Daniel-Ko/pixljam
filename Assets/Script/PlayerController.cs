@@ -44,7 +44,9 @@ public class PlayerController : MonoBehaviour {
 
     private void drop()
     {
-        //carriedObject.gameObject.AddComponent<Rigidbody>();
+        Debug.Log(carriedObject.gameObject.GetComponent<Rigidbody2D>());
+        carriedObject.gameObject.AddComponent<Rigidbody2D>();
+        Debug.Log(carriedObject.gameObject.GetComponent<Rigidbody2D>());
         carriedObject.parent = null; // Unparenting
         carriedObject.gameObject.AddComponent(typeof(Rigidbody)); // Gravity and co
         carriedObject = null; // Hands are free again
@@ -61,7 +63,7 @@ public class PlayerController : MonoBehaviour {
             //Set the box in front of character
             Destroy(carriedObject.GetComponent<Rigidbody2D>());
             carriedObject.parent = transform;
-            carriedObject.localPosition = new Vector3(0, 1f, 1f); // Might need to change that
+            carriedObject.localPosition = new Vector3(0, -0.7f, 1f); // Might need to change that
         }
     }
     // Update is called once per frame
@@ -70,7 +72,7 @@ public class PlayerController : MonoBehaviour {
         float forceX = 0f;
         float absValueX = GetComponent<Rigidbody2D>().velocity.x;
         float absValueY = GetComponent<Rigidbody2D>().velocity.y;
-
+        
         //PICKING UP KIWI
         if (Input.GetKey(KeyCode.P))
         {
