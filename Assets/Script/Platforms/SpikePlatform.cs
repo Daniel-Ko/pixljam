@@ -7,7 +7,6 @@ public class SpikePlatform : MonoBehaviour
 
 	// Spike at the top or bottom.
 	public bool top;
-	public int bounceBackForce = 200;
 	public AudioClip bounceClip;
 
 	// Use this for initialization
@@ -54,23 +53,27 @@ public class SpikePlatform : MonoBehaviour
 	public IEnumerator bounceBack (Collision2D other, ContactPoint2D contact)
 	{
 
-		float timer = 0;
-		float bounceDuration = 0.01f;
-
 		// Calculate angle between collision point and player.
-		Vector2 platform = (Vector2)transform.position;
+		Vector2 platform = (Vector2) transform.position;
 		Vector2 dir = contact.point - platform;
 
 		// Get the opposite vector and normalized it.
 		dir = -dir.normalized;
 
-		while (timer < bounceDuration) {
-			timer += Time.deltaTime;
-
-			// Player bounce back and flash red.
-			other.gameObject.GetComponent<Rigidbody2D> ().AddForce (dir * bounceBackForce);
-			other.gameObject.GetComponent<Animation> ().Play ("HurtAnimation");
+		// Player bounce back and flash red.
+		if (top) {
+			other.gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (
+				other.gameObject.transform.position.x * -100, 
+				other.gameObject.transform.position.y * 50)
+			);
+		} else {
+			other.gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (
+				other.gameObject.transform.position.x * -100, 
+				other.gameObject.transform.position.y * -50)
+			);
 		}
+			
+		other.gameObject.GetComponent<Animation> ().Play ("HurtAnimation");
 			
 		// Bounce back sound.
 		if (bounceClip) {
