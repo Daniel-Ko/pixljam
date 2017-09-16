@@ -1,0 +1,593 @@
+fileFormatVersion: 2
+guid: db51465d917141e40b1d07d82b4f51b2
+timeCreated: 1505554391
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: kiwi_1
+    21300002: kiwi_2
+    21300004: kiwi_walking_1
+    21300006: kiwi_walking_2
+    21300008: kiwi_walking_3
+    21300010: kiwi_walking_4
+    21300012: kiwi_walking_5
+    21300014: kiwi_3
+    21300016: kiwi_4
+    21300018: kiwi_5
+    21300020: kiwi_6
+    21300022: kiwi_7
+    21300024: kiwi_8
+    21300026: kiwi_9
+    21300028: kiwi_10
+    21300030: kiwi_eating_1
+    21300032: kiwi_eating_2
+    21300034: kiwi_eating_3
+    21300036: kiwi_eating_4
+    21300038: kiwi_eating_5
+    21300040: kiwi_eating_6
+    21300042: kiwi_eating_7
+    21300044: kiwi_eating_8
+    21300046: kiwi_eating_9
+    21300048: kiwi_eating_10
+    21300050: kiwi_bounce_1
+    21300052: kiwi_bounce_2
+    21300054: kiwi_bounce_3
+    21300056: kiwi_bounce_4
+    21300058: kiwi_bounce_5
+    21300060: kiwi_bounce_6
+    21300062: kiwi_bounce_7
+    21300064: kiwi_bounce_8
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kiwi_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 5489
+        width: 544
+        height: 708
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_2
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 5483
+        width: 506
+        height: 684
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_walking_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 6451
+        width: 790
+        height: 590
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_walking_2
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 6420
+        width: 779
+        height: 620
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_walking_3
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 6445
+        width: 795
+        height: 602
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_walking_4
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 6426
+        width: 783
+        height: 607
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_walking_5
+      rect:
+        serializedVersion: 2
+        x: 3611
+        y: 6438
+        width: 795
+        height: 590
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_3
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 5477
+        width: 513
+        height: 685
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_4
+      rect:
+        serializedVersion: 2
+        x: 2782
+        y: 5478
+        width: 512
+        height: 691
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_5
+      rect:
+        serializedVersion: 2
+        x: 3699
+        y: 5496
+        width: 533
+        height: 652
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_6
+      rect:
+        serializedVersion: 2
+        x: 4571
+        y: 5499
+        width: 545
+        height: 689
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_7
+      rect:
+        serializedVersion: 2
+        x: 5454
+        y: 5492
+        width: 599
+        height: 748
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_8
+      rect:
+        serializedVersion: 2
+        x: 6363
+        y: 5440
+        width: 655
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 4521
+        width: 666
+        height: 839
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_10
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 4525
+        width: 797
+        height: 862
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_eating_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 3703
+        width: 548
+        height: 718
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_eating_2
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 3727
+        width: 509
+        height: 685
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_eating_3
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 3696
+        width: 515
+        height: 689
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_eating_4
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 3705
+        width: 510
+        height: 681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_eating_5
+      rect:
+        serializedVersion: 2
+        x: 3673
+        y: 3715
+        width: 530
+        height: 655
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_eating_6
+      rect:
+        serializedVersion: 2
+        x: 4540
+        y: 3720
+        width: 557
+        height: 690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_eating_7
+      rect:
+        serializedVersion: 2
+        x: 5434
+        y: 3714
+        width: 598
+        height: 745
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_eating_8
+      rect:
+        serializedVersion: 2
+        x: 6343
+        y: 3658
+        width: 648
+        height: 815
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_eating_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2747
+        width: 671
+        height: 835
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_eating_10
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 2717
+        width: 795
+        height: 868
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_bounce_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 792
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_bounce_2
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 18
+        width: 772
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_bounce_3
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 6
+        width: 786
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_bounce_4
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 0
+        width: 796
+        height: 886
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_bounce_5
+      rect:
+        serializedVersion: 2
+        x: 3558
+        y: 0
+        width: 853
+        height: 888
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_bounce_6
+      rect:
+        serializedVersion: 2
+        x: 4446
+        y: 16
+        width: 890
+        height: 877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_bounce_7
+      rect:
+        serializedVersion: 2
+        x: 5360
+        y: 13
+        width: 868
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kiwi_bounce_8
+      rect:
+        serializedVersion: 2
+        x: 6254
+        y: 8
+        width: 874
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
