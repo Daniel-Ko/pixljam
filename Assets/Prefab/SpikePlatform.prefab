@@ -80,6 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   top: 0
   bounceBackForce: 180
+  bounceClip: {fileID: 8300000, guid: ae9656cad743ccb4ab7c93e9dc1940ce, type: 3}
 --- !u!212 &212743952940386698
 SpriteRenderer:
   m_ObjectHideFlags: 1
