@@ -20,10 +20,10 @@ public class FruitPickup : MonoBehaviour {
 	}
 
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.GetComponent<PlayerController>() == null) return;
-        PlayerController script = other.GetComponent<PlayerController>();
+        if (other.GetComponent<KiwiController>() == null) return;
+        KiwiController script = other.GetComponent<KiwiController>();
         script.feedKiwi(weight);      
-        levelManager.PlayKiwiParticleAnimation(gameObject.transform.position, gameObject.transform.rotation);
+        levelManager.PlayKiwiParticleAnimation(script.transform.position, script.transform.rotation);
         
         kiwifruitSoundEffect.Play();
         Debug.Log("PLAY SOUND");
