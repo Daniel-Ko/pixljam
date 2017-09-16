@@ -5,7 +5,9 @@ public class BreakingPlatform : MonoBehaviour
 {
 	private Rigidbody2D r2d2;
 	public int hp;
-	Texture2D platformTexture;
+	Texture2D hp2;
+	Texture2D hp1;
+
 
 	//var remains : GameObject;
 
@@ -18,9 +20,9 @@ public class BreakingPlatform : MonoBehaviour
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.collider.CompareTag ("Bird") || coll.collider.CompareTag ("Kiwi") ) {
-			BounceDamage(coll.gameObject.GetComponent<PlayerController>());
-			if(hp == 0)
+		if (coll.collider.CompareTag ("Kiwi") ) {
+			BounceDamage(coll.gameObject.GetComponent<KiwiController>());
+			if(hp == 0)	
 				StartCoroutine (PlatformBreak ());
 		}
 	}
@@ -31,10 +33,10 @@ public class BreakingPlatform : MonoBehaviour
 		yield return 0;
 	}
 
-	void BounceDamage(PlayerController player) {
-		if (player == null)
+	void BounceDamage(KiwiController kiwi) {
+		if (kiwi == null)
 			return;
-		if(false) { //player.isBounce()
+		if(kiwi.isBouncy ()) { 
 			--this.hp;
 			SetTexture ();
 		}
