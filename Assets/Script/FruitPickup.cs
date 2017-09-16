@@ -20,16 +20,18 @@ public class FruitPickup : MonoBehaviour {
 	}
 
     void OnTriggerEnter2D(Collider2D other) {
-        if (other.GetComponent<KiwiController>() == null) return;
-        KiwiController script = other.GetComponent<KiwiController>();
-        script.feedKiwi(weight);      
-        levelManager.PlayKiwiParticleAnimation(script.transform.position, script.transform.rotation);
-        
-        kiwifruitSoundEffect.Play();
-        Debug.Log("PLAY SOUND");
-        /*
-        ScoreManager.AddPoints(pointsToAdd);
-        */
-        Destroy(gameObject);
+        if (other.GetComponent<KiwiController>() != null)
+        {
+            KiwiController script = other.GetComponent<KiwiController>();
+            script.feedKiwi(weight);
+            levelManager.PlayKiwiParticleAnimation(script.transform.position, script.transform.rotation);
+
+            kiwifruitSoundEffect.Play();
+            Debug.Log("PLAY SOUND");
+            /*
+            ScoreManager.AddPoints(pointsToAdd);
+            */
+            Destroy(gameObject);
+        }
     }
 }
