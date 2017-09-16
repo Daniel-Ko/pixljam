@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
 
-    public GameObject kiwifruitParticle;
     private PlayerController player;
-
-	// Use this for initialization
-	void Start () {
+    public GameObject currentCheckpoint;
+    public GameObject kiwifruitParticle;
+    public float respawnDelay;
+    // Use this for initialization
+    void Start () {
         player = FindObjectOfType<PlayerController>();
 	}
 	
@@ -19,5 +20,14 @@ public class LevelManager : MonoBehaviour {
 
     public void PlayKiwiParticleAnimation(Vector3 position, Quaternion rotation) {
         Instantiate(kiwifruitParticle, position, rotation);
+    }
+
+    public void RespawnPlayer() {
+        StartCoroutine("RespawnPlayerCo");
+    }
+
+    public IEnumerator RespawnPlayerCo() {
+        player.transform.position = currentCheckpoint.transform.position;
+        yield return new WaitForSeconds(respawnDelay);
     }
 }
