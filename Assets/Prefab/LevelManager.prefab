@@ -54,4 +54,4 @@ MonoBehaviour:
   currentCheckpoint: {fileID: 0}
   kiwifruitParticle: {fileID: 1332743962599290, guid: c1b11a402823f784fb8e442cdc6dabc8,
     type: 2}
-  respawnDelay: 0
+  respawnDelay: 1

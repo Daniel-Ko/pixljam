@@ -24,10 +24,12 @@ public class FruitPickup : MonoBehaviour {
         PlayerController script = other.GetComponent<PlayerController>();
         script.feedKiwi(weight);      
         levelManager.PlayKiwiParticleAnimation(gameObject.transform.position, gameObject.transform.rotation);
+        
         kiwifruitSoundEffect.Play();
-            /*
-            ScoreManager.AddPoints(pointsToAdd);
-            */
+        Debug.Log("PLAY SOUND");
+        /*
+        ScoreManager.AddPoints(pointsToAdd);
+        */
         Destroy(gameObject);
     }
 }

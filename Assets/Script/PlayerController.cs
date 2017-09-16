@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour {
         HP -= damage;
     }
 
-    public int getTotalKiwisEatten() {
+	public int weight() {
         return totalWeight;
     }
 

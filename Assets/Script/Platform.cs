@@ -2,5 +2,5 @@
 using UnityEngine;
 
 public interface Platform {
-	Bounds getPos ();
+	void setWeight (PlayerController player);
 }
