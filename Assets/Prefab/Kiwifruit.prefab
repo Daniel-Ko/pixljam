@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb35b594d8e1199498dddb9171131f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 5
+  weight: 1
   levelManager: {fileID: 0}
   kiwifruitSoundEffect: {fileID: 8300000, guid: eb143325e2e4dc941ae540ec9f2ce26a,
     type: 3}

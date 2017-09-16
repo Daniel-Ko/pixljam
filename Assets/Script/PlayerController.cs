@@ -52,10 +52,16 @@ public class PlayerController : MonoBehaviour {
         {
             if (carriedObject != null)//holding something already drop it
             {
-                drop();
+                
             }
             else {// Nothing in hand, we check if something is around and pick it up
                 pickUp();
+            }
+        }
+        if (Input.GetKey(KeyCode.O)) {
+            if (carriedObject != null)//holding something already drop it
+            {
+                drop();
             }
         }
 
@@ -111,19 +117,8 @@ public class PlayerController : MonoBehaviour {
         {
             KiwiController script = carriedObject.gameObject.GetComponent<KiwiController>();
             int weightOfKiwi = script.totalWeight;
-            float newWeightOfPlayer = 0;
-            switch (weightOfKiwi)
-            {
-                case 5:
-                    newWeightOfPlayer = 1.08f;
-                    break;
-                case 10:
-                    newWeightOfPlayer = 1.16f;
-                    break;
-                case 15:
-                    newWeightOfPlayer = 1.24f;
-                    break;
-            }
+            float newWeightOfPlayer = updateMassBasedOnNumKiwis(weightOfKiwi);
+            
             if (newWeightOfPlayer > 0 && newWeightOfPlayer < 20)
             {
                 GetComponent<Rigidbody2D>().mass = newWeightOfPlayer;
@@ -164,4 +159,32 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+
+    private float updateMassBasedOnNumKiwis(int numberOfKiwisEaten) {
+        switch (numberOfKiwisEaten)
+            {
+                case 1:
+                    return 1.03f;
+                case 2:
+                     return 1.06f;
+                case 3:
+                    return 1.09f;
+                case 4:
+                    return 1.12f;
+                case 5:
+                    return 1.15f;
+                case 6:
+                    return 1.18f;
+                case 7:
+                    return 1.21f;
+                case 8:
+                    return 1.24f;
+                 case 9:
+                    return 1.27f;
+                case 10:
+                    return 1.30f;
+            default:
+                return 1f;
+        }
+    }
 }
