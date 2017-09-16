@@ -34,7 +34,7 @@ public class SpikePlatform : MonoBehaviour {
 					collided = true;
 				}
 			} else {
-				// Collision is from the down.
+				// Collision is from the bottom.
 				if (Vector3.Dot (contact.normal, Vector3.up) > 0.5) {
 					other.gameObject.SendMessage ("hurtPlayer", 1);
 					collided = true;
