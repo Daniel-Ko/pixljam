@@ -9,7 +9,7 @@ public class FallingPlatform : MonoBehaviour {
 	void Start() {
 		r2d2 = GetComponent<Rigidbody2D> ();
 		r2d2.isKinematic = true;
-		print (fallDelay);
+		fallDelay = 2;
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
@@ -29,10 +29,10 @@ public class FallingPlatform : MonoBehaviour {
 	void setWeight(PlayerController player) {
 		if (player == null)
 			return;
+		
+		float newDelay = 2;
 
-		float newDelay = fallDelay;
-		newDelay += ((float) (player.getTotalKiwisEatten()) / 5);
-
+		newDelay -= (float) ((player.weight() / 5) * 0.2);
 		fallDelay = newDelay;
 	}
 }
