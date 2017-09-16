@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1795300409079448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.254, y: 2.684, z: 0}
+  m_LocalPosition: {x: -3.0580745, y: 0.24853396, z: 0}
   m_LocalScale: {x: 0.07749871, y: 0.07749871, z: 0.07749871}
   m_Children:
   - {fileID: 4638903206913602}
@@ -136,9 +136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd3a506d2d76f841b341789b6d3badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 18
+  playerSpeed: 20
   flyingSpeed: 5
-  airSpeedMult: 1
+  airSpeedMult: 0.2
   groundCheck: {fileID: 4638903206913602}
   groundCheckRadius: 0.2
   whatIsGround:

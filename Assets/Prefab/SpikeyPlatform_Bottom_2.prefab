@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 212126816883998408}
   - component: {fileID: 60625002535031936}
   - component: {fileID: 114989496765526594}
-  m_Layer: 0
+  - component: {fileID: 252053941750065650}
+  m_Layer: 9
   m_Name: SpikeyPlatform_Bottom_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1402713337868246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.77343, y: 5.662511, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.36, y: 4.4, z: 0}
+  m_LocalScale: {x: 1.219079, y: 1.219079, z: 1.219079}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -52,7 +53,7 @@ PolygonCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -125,7 +126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   top: 0
-  bounceBackForce: 200
   bounceClip: {fileID: 0}
 --- !u!212 &212126816883998408
 SpriteRenderer:
@@ -169,3 +169,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!252 &252053941750065650
+SurfaceEffector2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1402713337868246}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Speed: 1
+  m_SpeedVariation: 0
+  m_ForceScale: 0.1
+  m_UseContactForce: 0
+  m_UseFriction: 1
+  m_UseBounce: 1
