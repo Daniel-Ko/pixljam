@@ -76,11 +76,6 @@ public class PlayerController : MonoBehaviour {
             transform.localScale = new Vector3(-2, 2, 1);
         }
 
-        //Crouching
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-
-        }
 
         //JUMPING
         if (Input.GetKey(KeyCode.Space)  )
@@ -112,9 +107,28 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void updateMassOfThisBasedOnCarried() {
-        KiwiController script = carriedObject.gameObject.GetComponent<KiwiController>();
-        float weightOfKiwi = script.totalWeight;
-        GetComponent<Rigidbody2D>().mass = (weightOfKiwi * 0.15f);
+        if (carriedObject != null)
+        {
+            KiwiController script = carriedObject.gameObject.GetComponent<KiwiController>();
+            int weightOfKiwi = script.totalWeight;
+            float newWeightOfPlayer = 0;
+            switch (weightOfKiwi)
+            {
+                case 5:
+                    newWeightOfPlayer = 1.08f;
+                    break;
+                case 10:
+                    newWeightOfPlayer = 1.16f;
+                    break;
+                case 15:
+                    newWeightOfPlayer = 1.24f;
+                    break;
+            }
+            if (newWeightOfPlayer > 0 && newWeightOfPlayer < 20)
+            {
+                GetComponent<Rigidbody2D>().mass = newWeightOfPlayer;
+            }
+        }
     }
 
     /*Methods involving interacting with Kiwi*/
@@ -149,4 +163,5 @@ public class PlayerController : MonoBehaviour {
             carriedObject.localPosition = new Vector3(0, -0.6f, 1f); // Might need to change that
         }
     }
+
 }
