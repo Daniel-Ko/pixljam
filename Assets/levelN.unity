@@ -462,14 +462,6 @@ Prefab:
       propertyPath: m_Name
       value: FallingPlatform (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 4857846747081500, guid: c881e98c9355798478843b208859bebe, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.22847669
-      objectReference: {fileID: 0}
-    - target: {fileID: 4857846747081500, guid: c881e98c9355798478843b208859bebe, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.24566758
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c881e98c9355798478843b208859bebe, type: 2}
   m_IsPrefabParent: 0
@@ -483,6 +475,7 @@ GameObject:
   - component: {fileID: 263181512}
   - component: {fileID: 263181513}
   - component: {fileID: 263181514}
+  - component: {fileID: 263181515}
   m_Layer: 9
   m_Name: platform1 (1)
   m_TagString: Untagged
@@ -555,7 +548,7 @@ PolygonCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -599,6 +592,23 @@ PolygonCollider2D:
       - {x: 0.945, y: -0.14999999}
       - {x: 0.995, y: -0.099999994}
       - {x: 1.005, y: 0.17}
+--- !u!252 &263181515
+SurfaceEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 263181511}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Speed: 1
+  m_SpeedVariation: 0
+  m_ForceScale: 0.1
+  m_UseContactForce: 0
+  m_UseFriction: 1
+  m_UseBounce: 1
 --- !u!1001 &300181126
 Prefab:
   m_ObjectHideFlags: 0
@@ -1003,22 +1013,6 @@ Prefab:
     - target: {fileID: 4768071340949914, guid: bbddde314642c82438498514a82a5738, type: 2}
       propertyPath: m_RootOrder
       value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4768071340949914, guid: bbddde314642c82438498514a82a5738, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.219079
-      objectReference: {fileID: 0}
-    - target: {fileID: 4768071340949914, guid: bbddde314642c82438498514a82a5738, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.219079
-      objectReference: {fileID: 0}
-    - target: {fileID: 4768071340949914, guid: bbddde314642c82438498514a82a5738, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.219079
-      objectReference: {fileID: 0}
-    - target: {fileID: 1402713337868246, guid: bbddde314642c82438498514a82a5738, type: 2}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bbddde314642c82438498514a82a5738, type: 2}
@@ -3388,18 +3382,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4405723947507420, guid: c0b88182fb56b9b44a8075e09e0eebcf, type: 2}
       propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4405723947507420, guid: c0b88182fb56b9b44a8075e09e0eebcf, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.6396869
-      objectReference: {fileID: 0}
-    - target: {fileID: 4405723947507420, guid: c0b88182fb56b9b44a8075e09e0eebcf, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.7648925
-      objectReference: {fileID: 0}
-    - target: {fileID: 1210848159123958, guid: c0b88182fb56b9b44a8075e09e0eebcf, type: 2}
-      propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []

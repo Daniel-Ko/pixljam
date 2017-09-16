@@ -84,7 +84,6 @@ public class PlayerController : MonoBehaviour {
             {
                 forceX = grounded ? playerSpeed: (playerSpeed*airSpeedMult);
             }
-           // transform.localScale = new Vector3(0.07749871f, 0.07749871f, 0.07749871f);
         }
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
@@ -92,7 +91,6 @@ public class PlayerController : MonoBehaviour {
             {
                 forceX = grounded ? -playerSpeed : (-playerSpeed * airSpeedMult);
             }
-           // transform.localScale = new Vector3(-0.07749871f, 0.07749871f, 0.07749871f);
         }
 
 
