@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class KiwiController : MonoBehaviour {
-    private int totalWeight;
+    public int totalWeight;
 
     private PlayerController script = null;
     private bool beingCarried;
@@ -17,28 +17,33 @@ public class KiwiController : MonoBehaviour {
       
     }
 
-  /*  void OnTriggerEnter2D(Collider2D other)
+    /*  void OnTriggerEnter2D(Collider2D other)
+      {
+          //Make sure we are just connecting with Bird
+          if (other.gameObject.tag == "Bird")
+          {
+              if (other.GetComponent<PlayerController>() == null) return;
+              PlayerController script = other.GetComponent<PlayerController>();
+              this.script = script;
+              script.carryingCheck(true);
+              beingCarried = true;
+          }
+      }
+      void OnTriggerExit2D(Collider2D other)
+      {
+          //Make sure its the bird
+          if (other.gameObject.tag == "Bird")
+          {
+              if (this.script != null)
+              {
+                  this.script.carryingCheck(false);
+                  beingCarried = false;
+              }
+          }
+      }*/
+
+    public void feedKiwi(int kiwiWeight)
     {
-        //Make sure we are just connecting with Bird
-        if (other.gameObject.tag == "Bird")
-        {
-            if (other.GetComponent<PlayerController>() == null) return;
-            PlayerController script = other.GetComponent<PlayerController>();
-            this.script = script;
-            script.carryingCheck(true);
-            beingCarried = true;
-        }
+        totalWeight += kiwiWeight;
     }
-    void OnTriggerExit2D(Collider2D other)
-    {
-        //Make sure its the bird
-        if (other.gameObject.tag == "Bird")
-        {
-            if (this.script != null)
-            {
-                this.script.carryingCheck(false);
-                beingCarried = false;
-            }
-        }
-    }*/
 }
