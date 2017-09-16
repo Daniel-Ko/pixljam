@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour {
             {
                 forceX = grounded ? playerSpeed: (playerSpeed*airSpeedMult);
             }
-            transform.localScale = new Vector3(2, 2, 1);
+            transform.localScale = new Vector3(0.1302142f, 0.1302142f, 0.1302142f);
         }
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour {
             {
                 forceX = grounded ? -playerSpeed : (-playerSpeed * airSpeedMult);
             }
-            transform.localScale = new Vector3(-2, 2, 1);
+            transform.localScale = new Vector3(-0.1302142f, 0.1302142f, 0.1302142f);
         }
 
 
@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour {
             }
         }
         GetComponent<Rigidbody2D>().AddForce(new Vector2(forceX,forceY));
-        anim.SetFloat("speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
+        //anim.SetFloat("speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
     }
 
     /*
@@ -143,9 +143,7 @@ public class PlayerController : MonoBehaviour {
 
     private void drop()
     {
-        Debug.Log(carriedObject.gameObject.GetComponent<Rigidbody2D>());
         carriedObject.gameObject.AddComponent<Rigidbody2D>();
-        Debug.Log(carriedObject.gameObject.GetComponent<Rigidbody2D>());
         carriedObject.parent = null; // Unparenting
         carriedObject.gameObject.AddComponent(typeof(Rigidbody)); // Gravity and co
         carriedObject = null; // Hands are free again
@@ -160,17 +158,18 @@ public class PlayerController : MonoBehaviour {
         bool canPickUp = Physics2D.OverlapCircle(transform.position, pickUpDist, pickupLayer);
         Collider2D c = Physics2D.OverlapCircle(transform.position, pickUpDist, pickupLayer);
 
-        Debug.Log(canPickUp);
+        float locationOfPickup = GetComponent<CircleCollider2D>().bounds.size.y;
+        Debug.Log(locationOfPickup);
         if (canPickUp)
             carriedObject = c.transform;
         
         if (carriedObject != null)
         {
-            Debug.Log("picked uup");
+            
             //Set the box in front of character
             Destroy(carriedObject.GetComponent<Rigidbody2D>());
             carriedObject.parent = transform;
-            carriedObject.localPosition = new Vector3(0, -0.6f, 1f); // Might need to change that
+            carriedObject.localPosition = new Vector3(2f, -locationOfPickup*5, 1f); // Might need to change that
         }
     }
 
