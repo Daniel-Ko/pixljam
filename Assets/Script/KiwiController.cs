@@ -14,15 +14,10 @@ public class KiwiController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //we know of the bird
-        if (beingCarried) {
-             //make this kiwi pos be moved along with Birds
-             //transform.Translate(new Vector3(script.GetComponent<Rigidbody2D>().position.x/2, script.GetComponent<Rigidbody2D>().position.y/2));
-             //GetComponent<Rigidbody2D>().position = new Vector3(script.GetComponent<Rigidbody2D>().position.x, script.GetComponent<Rigidbody2D>().position.y / 2);
-        }
+      
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+  /*  void OnTriggerEnter2D(Collider2D other)
     {
         //Make sure we are just connecting with Bird
         if (other.gameObject.tag == "Bird")
@@ -45,5 +40,5 @@ public class KiwiController : MonoBehaviour {
                 beingCarried = false;
             }
         }
-    }
+    }*/
 }

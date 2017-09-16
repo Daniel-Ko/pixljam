@@ -17,9 +17,6 @@ public class PlayerController : MonoBehaviour {
     public LayerMask whatIsGround;
     private bool grounded;
 
-    //Kiwi and bird interaction fields
-    private bool isCarryingKiwi;
-
     // An object need to closer than that distance to be picked up.
     public float pickUpDist = 0.5f;
     private Transform carriedObject = null;
@@ -40,31 +37,6 @@ public class PlayerController : MonoBehaviour {
 
         //anim.SetFloat("falling", GetComponent<Rigidbody2D>().velocity.y);
 
-    }
-
-    private void drop()
-    {
-        Debug.Log(carriedObject.gameObject.GetComponent<Rigidbody2D>());
-        carriedObject.gameObject.AddComponent<Rigidbody2D>();
-        Debug.Log(carriedObject.gameObject.GetComponent<Rigidbody2D>());
-        carriedObject.parent = null; // Unparenting
-        carriedObject.gameObject.AddComponent(typeof(Rigidbody)); // Gravity and co
-        carriedObject = null; // Hands are free again
-    }
-
-    private void pickUp() {
-        bool canPickUp =  Physics2D.OverlapCircle(transform.position, pickUpDist, pickupLayer);
-        Collider2D c = Physics2D.OverlapCircle(transform.position, pickUpDist, pickupLayer);
-
-        if (canPickUp)
-            carriedObject = c.transform;
-
-        if (carriedObject != null) {
-            //Set the box in front of character
-            Destroy(carriedObject.GetComponent<Rigidbody2D>());
-            carriedObject.parent = transform;
-            carriedObject.localPosition = new Vector3(0, -0.7f, 1f); // Might need to change that
-        }
     }
     // Update is called once per frame
     void Update () {
@@ -131,9 +103,6 @@ public class PlayerController : MonoBehaviour {
         totalWeight += kiwiWeight;
     }
 
-    public void carryingCheck(bool carry) {
-        isCarryingKiwi = carry;
-    }
     public void hurtPlayer(int damage) {
         Debug.Log("Ouch");
         HP -= damage;
@@ -143,5 +112,36 @@ public class PlayerController : MonoBehaviour {
         return totalWeight;
     }
 
+    /*Methods involving interacting with Kiwi*/
 
+    private void drop()
+    {
+        Debug.Log(carriedObject.gameObject.GetComponent<Rigidbody2D>());
+        carriedObject.gameObject.AddComponent<Rigidbody2D>();
+        Debug.Log(carriedObject.gameObject.GetComponent<Rigidbody2D>());
+        carriedObject.parent = null; // Unparenting
+        carriedObject.gameObject.AddComponent(typeof(Rigidbody)); // Gravity and co
+        carriedObject = null; // Hands are free again
+    }
+
+    /* The player check there is a collision with its bounding box and another 
+        the other has to have pickupLayer in this case its the kiwi
+         
+    */
+    private void pickUp()
+    {
+        bool canPickUp = Physics2D.OverlapCircle(transform.position, pickUpDist, pickupLayer);
+        Collider2D c = Physics2D.OverlapCircle(transform.position, pickUpDist, pickupLayer);
+
+        if (canPickUp)
+            carriedObject = c.transform;
+
+        if (carriedObject != null)
+        {
+            //Set the box in front of character
+            Destroy(carriedObject.GetComponent<Rigidbody2D>());
+            carriedObject.parent = transform;
+            carriedObject.localPosition = new Vector3(0, -0.6f, 1f); // Might need to change that
+        }
+    }
 }
