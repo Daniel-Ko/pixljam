@@ -9,10 +9,12 @@ public class FallingPlatform : MonoBehaviour {
 	void Start() {
 		r2d2 = GetComponent<Rigidbody2D> ();
 		r2d2.isKinematic = true;
+		print (fallDelay);
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.collider.CompareTag ("Bird") || coll.collider.CompareTag ("Kiwi") ) {
+			setWeight (coll.gameObject.GetComponent<PlayerController>());
 			StartCoroutine (Fall ());
 		}
 	}
@@ -23,7 +25,15 @@ public class FallingPlatform : MonoBehaviour {
 		GetComponent<BoxCollider2D> ().isTrigger = true;
 		yield return 0;
 	}
+		
+	void setWeight(PlayerController player) {
+		if (player == null)
+			return;
 
+		float newDelay = fallDelay;
+		newDelay += ((float) (player.getTotalKiwisEatten()) / 5);
 
+		fallDelay = newDelay;
+	}
 }
 	

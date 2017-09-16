@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Kiwi
   - Bird
-  - Deadly
   layers:
   - Default
   - TransparentFX
@@ -15,10 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - ground
-  - Pickup
-  - Checkpoint
->>>>>>> cb3d4434fe7affb35b8165b9b3ecbc097d7e5fa7
+  - 
+  - 
   - 
   - 
   - 
