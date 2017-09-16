@@ -10,6 +10,9 @@ public class KiwiController : MonoBehaviour {
 
     private bool bounceMode = false;
 
+    public Sprite normalSprite;
+    public Sprite eatingSprite;
+    public int eatingDelay;
   
     //Main players script
     private  PlayerController player_script;
@@ -55,7 +58,15 @@ public class KiwiController : MonoBehaviour {
                 //rend.material = (Material)Resources.Load("Materials/KiwiMaterial.physicsMaterial2D");
             }
         }
+    }
 
+    public void RenderEatingSprite() {
+        GetComponent<SpriteRenderer>().sprite = eatingSprite;
+    }
+
+    public void RenderNormalSprite()
+    {
+        GetComponent<SpriteRenderer>().sprite = normalSprite;
     }
 
     public void feedKiwi(int kiwiWeight)
