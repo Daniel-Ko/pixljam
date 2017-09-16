@@ -163,11 +163,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4672791645745938, guid: 7092f7a6627c2a34abaa809409e5c6d5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.75
+      value: 2.03
       objectReference: {fileID: 0}
     - target: {fileID: 4672791645745938, guid: 7092f7a6627c2a34abaa809409e5c6d5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.63
+      value: 1.36
       objectReference: {fileID: 0}
     - target: {fileID: 4672791645745938, guid: 7092f7a6627c2a34abaa809409e5c6d5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -192,16 +192,6 @@ Prefab:
     - target: {fileID: 4672791645745938, guid: 7092f7a6627c2a34abaa809409e5c6d5, type: 2}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 50108470222725398, guid: 7092f7a6627c2a34abaa809409e5c6d5,
-        type: 2}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 58714708957081726, guid: 7092f7a6627c2a34abaa809409e5c6d5,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7092f7a6627c2a34abaa809409e5c6d5, type: 2}
@@ -248,16 +238,6 @@ Prefab:
     - target: {fileID: 1072209941269348, guid: ec8500d711dd38944917148247c69afa, type: 2}
       propertyPath: m_Name
       value: Bird
-      objectReference: {fileID: 0}
-    - target: {fileID: 114992322353022574, guid: ec8500d711dd38944917148247c69afa,
-        type: 2}
-      propertyPath: flyingSpeed
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 50409704885807454, guid: ec8500d711dd38944917148247c69afa,
-        type: 2}
-      propertyPath: m_Mass
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec8500d711dd38944917148247c69afa, type: 2}
