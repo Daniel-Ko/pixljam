@@ -219,8 +219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd3a506d2d76f841b341789b6d3badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 12
-  flyingSpeed: 12
+  playerSpeed: 25
+  flyingSpeed: 20
   airSpeedMult: 0.3
   groundCheck: {fileID: 4627059826268812}
   groundCheckRadius: 0.2
