@@ -16,9 +16,9 @@ public class KiwiController : MonoBehaviour {
 	void Update () {
         //we know of the bird
         if (beingCarried) {
-            //make this kiwi pos be moved along with Birds
-            //transform.Translate(new Vector3(script.GetComponent<Rigidbody2D>().position.x/2, script.GetComponent<Rigidbody2D>().position.y/2));
-             GetComponent<Rigidbody2D>().position = new Vector3(script.GetComponent<Rigidbody2D>().position.x, script.GetComponent<Rigidbody2D>().position.y / 2);
+             //make this kiwi pos be moved along with Birds
+             //transform.Translate(new Vector3(script.GetComponent<Rigidbody2D>().position.x/2, script.GetComponent<Rigidbody2D>().position.y/2));
+             //GetComponent<Rigidbody2D>().position = new Vector3(script.GetComponent<Rigidbody2D>().position.x, script.GetComponent<Rigidbody2D>().position.y / 2);
         }
     }
 
