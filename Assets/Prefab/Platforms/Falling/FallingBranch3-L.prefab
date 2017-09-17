@@ -102,7 +102,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4284829661857136}
   - component: {fileID: 50872118663124624}
-  - component: {fileID: 60714889132674016}
   - component: {fileID: 114744412655234930}
   m_Layer: 0
   m_Name: FallingBranch3-L
@@ -530,35 +529,6 @@ PolygonCollider2D:
       - {x: 0.13, y: -0.13499999}
       - {x: 0.17, y: -0.125}
       - {x: 0.17, y: 0.125}
---- !u!60 &60714889132674016
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729962901514796}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
 --- !u!60 &60976107405493316
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -618,7 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24fde086796dc8245b20073fc07ff334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallDelay: 2
+  delayBeforeDespawn: 4
 --- !u!114 &114278002366757596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -630,7 +600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24fde086796dc8245b20073fc07ff334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallDelay: 2
+  delayBeforeDespawn: 4
 --- !u!114 &114584914065518322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -642,6 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7cb03080fd8b564a84491620aea8894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayBeforeDespawn: 4
 --- !u!114 &114686618765005912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -653,7 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24fde086796dc8245b20073fc07ff334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallDelay: 2
+  delayBeforeDespawn: 4
 --- !u!114 &114744412655234930
 MonoBehaviour:
   m_ObjectHideFlags: 1
