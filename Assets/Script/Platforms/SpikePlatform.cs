@@ -9,6 +9,10 @@ public class SpikePlatform : MonoBehaviour
 	public bool top;
 	public AudioClip bounceClip;
 
+	// Bounce back forces.
+	public int bounceBackX = 100;
+	public int bounceBackY = 50;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -63,13 +67,13 @@ public class SpikePlatform : MonoBehaviour
 		// Player bounce back and flash red.
 		if (top) {
 			other.gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (
-				other.gameObject.transform.position.x * -100, 
-				other.gameObject.transform.position.y * 50)
+				other.gameObject.transform.position.x * -bounceBackX, 
+				other.gameObject.transform.position.y * bounceBackY)
 			);
 		} else {
 			other.gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (
-				other.gameObject.transform.position.x * -100, 
-				other.gameObject.transform.position.y * -50)
+				other.gameObject.transform.position.x * -bounceBackX, 
+				other.gameObject.transform.position.y * -bounceBackY)
 			);
 		}
 			
