@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ClickToContinue : MonoBehaviour {
+public class StartGameSplashScreen: MonoBehaviour {
 
 	// Scene name that we want to transition into.
 
