@@ -176,7 +176,7 @@ public class PlayerController : MonoBehaviour {
             //Set the box in front of character
             Destroy(carriedObject.GetComponent<Rigidbody2D>());
             carriedObject.parent = transform;
-            carriedObject.localPosition = new Vector3(2f, -locationOfPickup*5, 1f); // Might need to change that
+            carriedObject.localPosition = new Vector3(0f, -locationOfPickup*15f, 1f); // Might need to change that
         }
     }
 
