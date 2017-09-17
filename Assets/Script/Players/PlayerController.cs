@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
-    public int HP = 10;
+    private int HP = 10;
     public float playerSpeed;
     public float flyingSpeed;
     public float airSpeedMult = .3f;
@@ -123,7 +123,6 @@ public class PlayerController : MonoBehaviour {
     */
 
     public void hurtPlayer(int damage) {
-        Debug.Log("Ouch");
         HP -= damage;
     }
 
