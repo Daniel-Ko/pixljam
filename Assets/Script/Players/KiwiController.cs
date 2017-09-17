@@ -14,7 +14,13 @@ public class KiwiController : MonoBehaviour {
     public Sprite eatingSprite;
     public float eatingDelay;
     private Animator anim;
-  
+    public Sprite carriedSprite;
+    public Sprite carriedSprite2;
+    public Sprite carriedSprite3;
+    public Sprite carriedSprite4;
+    public Sprite carriedSprite5;
+    private SpriteRenderer spriteRenderer;
+
     //Main players script
     private  PlayerController player_script;
 
@@ -28,6 +34,9 @@ public class KiwiController : MonoBehaviour {
     void Start () {
         player_script = GameObject.Find("Bird").GetComponent <PlayerController> ();
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); // we are accessing the SpriteRenderer that is attached to the Gameobject
+        if (spriteRenderer.sprite == null) // if the sprite on spriteRenderer is null then
+            spriteRenderer.sprite = normalSprite; // set the sprite to sprite1
     }
 	
 	// Update is called once per frame
@@ -35,9 +44,37 @@ public class KiwiController : MonoBehaviour {
         if (Input.GetKey(KeyCode.Z)) {
             totalWeight = 10;
         }
+
+        if (beingCarried) {
+            Debug.Log("CARRIED");
+            switch (totalWeight) {
+                case 0:
+                    RenderNormalSprite();
+                    break;
+                case 1:
+                    spriteRenderer.sprite = carriedSprite;
+                    break;
+                case 2:
+                    spriteRenderer.sprite = carriedSprite2;
+                    break;
+                case 3:
+                    spriteRenderer.sprite = carriedSprite3;
+                    break;
+                case 4:
+                    spriteRenderer.sprite = carriedSprite4;
+                    break;
+                case 5:
+                    spriteRenderer.sprite = carriedSprite5;
+                    break;
+
+            }
+        } else {
+            RenderNormalSprite();
+        }
     }
 
     void FixedUpdate() {
+        updateIsBeingCarriedField();
         kiwi_grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
         if (totalWeight >= 10) {
             bounceMode = true;
@@ -83,12 +120,12 @@ public class KiwiController : MonoBehaviour {
     }
 
     public void RenderEatingSprite() {
-        GetComponent<SpriteRenderer>().sprite = eatingSprite;
+        spriteRenderer.sprite = eatingSprite;
     }
 
     public void RenderNormalSprite()
     {
-        GetComponent<SpriteRenderer>().sprite = normalSprite;
+        spriteRenderer.sprite = normalSprite;
     }
 
     public void feedKiwi(int kiwiWeight)
@@ -98,5 +135,11 @@ public class KiwiController : MonoBehaviour {
 
     public bool isBouncy() {
         return bounceMode;
+    }
+
+    private void updateIsBeingCarriedField() {
+        beingCarried = player_script.carriedObject != null ? true:false;
+        //anim.SetBool("carried")
+        anim.SetBool("carried", beingCarried);
     }
 }
