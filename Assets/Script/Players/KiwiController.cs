@@ -9,9 +9,13 @@ public class KiwiController : MonoBehaviour {
     private bool beingCarried;
 
     private bool bounceMode = false;
+    private bool bouncing = false;
 
     public Sprite normalSprite;
-    public Sprite eatingSprite;
+    public Sprite normalSprite2;
+    public Sprite normalSprite3;
+    public Sprite normalSprite4;
+    public Sprite normalSprite5;
     public float eatingDelay;
     private Animator anim;
     public Sprite carriedSprite;
@@ -19,6 +23,14 @@ public class KiwiController : MonoBehaviour {
     public Sprite carriedSprite3;
     public Sprite carriedSprite4;
     public Sprite carriedSprite5;
+    public Sprite eatingSprite;
+    public Sprite eatingSprite2;
+    public Sprite eatingSprite3;
+    public Sprite eatingSprite4;
+    public Sprite eatingSprite5;
+    private bool eating = false;
+    //public Sprite[] sprites;
+    //public string resourceName;
     private SpriteRenderer spriteRenderer;
 
     //Main players script
@@ -44,8 +56,10 @@ public class KiwiController : MonoBehaviour {
         if (Input.GetKey(KeyCode.Z)) {
             totalWeight = 10;
         }
+    }
 
-        if (beingCarried) {
+    private void LateUpdate() {
+        if (beingCarried && !bouncing) {
             Debug.Log("CARRIED");
             switch (totalWeight) {
                 case 0:
@@ -63,14 +77,16 @@ public class KiwiController : MonoBehaviour {
                 case 4:
                     spriteRenderer.sprite = carriedSprite4;
                     break;
-                case 5:
+                default:
                     spriteRenderer.sprite = carriedSprite5;
                     break;
-
             }
-        } else {
-            RenderNormalSprite();
         }
+        /*
+        if (eating){
+            RenderEatingSprite();
+        }
+        */
     }
 
     void FixedUpdate() {
@@ -96,8 +112,7 @@ public class KiwiController : MonoBehaviour {
             if (bounceMode)
             {
                 BounceAnimation();
-                //anim.Play("Bouncing");
-                //WaitForSeconds(eatingDelay);
+                bouncing = true;
                 Vector2 dir = (Vector2)transform.position;
                 Vector2 bounceDir = new Vector2(dir.x, dir.y * 150);
                 if (bounceDir.y > max_bounce_y) bounceDir.y = max_bounce_y;
@@ -106,6 +121,9 @@ public class KiwiController : MonoBehaviour {
                 totalWeight = 0;
                 //Renderer rend = GetComponent<Renderer>();
                 //rend.material = (Material)Resources.Load("Materials/KiwiMaterial.physicsMaterial2D");
+            } else
+            {
+                bouncing = false;
             }
         }
     }
@@ -120,12 +138,54 @@ public class KiwiController : MonoBehaviour {
     }
 
     public void RenderEatingSprite() {
-        spriteRenderer.sprite = eatingSprite;
+        //spriteRenderer.sprite = eatingSprite;
+        switch (totalWeight)
+        {
+            case 0:
+                spriteRenderer.sprite = eatingSprite;
+                break;
+            case 1:
+                spriteRenderer.sprite = eatingSprite2;
+                break;
+            case 2:
+                spriteRenderer.sprite = eatingSprite3;
+                break;
+            case 3:
+                spriteRenderer.sprite = eatingSprite4;
+                break;
+            case 4:
+                spriteRenderer.sprite = eatingSprite5;
+                break;
+            default:
+                spriteRenderer.sprite = eatingSprite5;
+                break;
+        }
     }
 
-    public void RenderNormalSprite()
-    {
-        spriteRenderer.sprite = normalSprite;
+    public void RenderNormalSprite() {
+        //spriteRenderer.sprite = normalSprite;
+
+        switch (totalWeight)
+        {
+            case 0:
+                spriteRenderer.sprite = normalSprite;
+                break;
+            case 1:
+                spriteRenderer.sprite = carriedSprite;
+                break;
+            case 2:
+                spriteRenderer.sprite = carriedSprite2;
+                break;
+            case 3:
+                spriteRenderer.sprite = carriedSprite3;
+                break;
+            case 4:
+                spriteRenderer.sprite = carriedSprite4;
+                break;
+            default:
+                spriteRenderer.sprite = carriedSprite5;
+                break;
+        }
     }
 
     public void feedKiwi(int kiwiWeight)
@@ -137,9 +197,13 @@ public class KiwiController : MonoBehaviour {
         return bounceMode;
     }
 
+    public void setEating(bool b)
+    {
+        eating = b;
+    }
+
     private void updateIsBeingCarriedField() {
         beingCarried = player_script.carriedObject != null ? true:false;
-        //anim.SetBool("carried")
         anim.SetBool("carried", beingCarried);
     }
 }

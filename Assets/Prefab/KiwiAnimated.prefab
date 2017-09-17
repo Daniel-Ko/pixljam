@@ -221,14 +221,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalWeight: 0
-  normalSprite: {fileID: 21300004, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
-  eatingSprite: {fileID: 0}
+  normalSprite: {fileID: 21300002, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  normalSprite2: {fileID: 21300016, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  normalSprite3: {fileID: 21300020, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  normalSprite4: {fileID: 21300024, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  normalSprite5: {fileID: 21300028, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
   eatingDelay: 1
   carriedSprite: {fileID: 21300002, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
   carriedSprite2: {fileID: 21300016, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
   carriedSprite3: {fileID: 21300020, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
   carriedSprite4: {fileID: 21300024, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
   carriedSprite5: {fileID: 21300028, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  eatingSprite: {fileID: 21300032, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  eatingSprite2: {fileID: 21300036, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  eatingSprite3: {fileID: 21300040, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  eatingSprite4: {fileID: 21300044, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  eatingSprite5: {fileID: 21300048, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
   groundCheck: {fileID: 4134718827550044}
   groundCheckRadius: 0.2
   whatIsGround:
@@ -246,7 +254,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1086ed48962ed3b47b9acbf1ce5f558b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceAnimation: {fileID: 0}
 --- !u!124 &124208848477039512
 Behaviour:
   m_ObjectHideFlags: 1

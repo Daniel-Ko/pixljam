@@ -24,8 +24,9 @@ public class FruitPickup : MonoBehaviour {
         {
             KiwiController script = other.GetComponent<KiwiController>();
             script.feedKiwi(weight);
-            script.gameObject.transform.localScale.Set(script.gameObject.transform.localScale.x * 2, script.gameObject.transform.localScale.y * 2, script.gameObject.transform.localScale.z * 2);
+            script.setEating(true);
             script.RenderEatingSprite();
+            //script.setEating(false);
             levelManager.PlayKiwiParticleAnimation(script.transform.position, script.transform.rotation);
 
             kiwifruitSoundEffect.Play();
@@ -34,7 +35,12 @@ public class FruitPickup : MonoBehaviour {
             ScoreManager.AddPoints(pointsToAdd);
             */
             Destroy(gameObject);
+
             //script.RenderNormalSprite();
+        } else
+        {
+            KiwiController script = other.GetComponent<KiwiController>();
+            script.setEating(false);
         }
         /*
         else {
