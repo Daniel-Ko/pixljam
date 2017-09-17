@@ -18,6 +18,14 @@ public class FallingPlatform : MonoBehaviour {
 
 		r2d2 = GetComponent<Rigidbody2D> ();
 		r2d2.isKinematic = true;
+
+		parent = (FallingLinked) transform.parent.gameObject.GetComponent<FallingLinked>();
+	}
+
+	void Update() {
+		if(parent.IsFalling ()) {
+			StartCoroutine (Fall ()); //make the platform fall
+		}
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
@@ -26,7 +34,6 @@ public class FallingPlatform : MonoBehaviour {
 			PlayerController player = coll.gameObject.GetComponent<PlayerController> ();
 
 			if (PlayerIsOnTopOfPlatform(player)) {
-				parent = (FallingLinked) transform.parent.gameObject.GetComponent<FallingLinked>();
 				parent.SetFall (true);
 				parent.setPlayer (player);
 			}
@@ -37,6 +44,12 @@ public class FallingPlatform : MonoBehaviour {
 		Vector3 pvec = player.gameObject.transform.position;
 
 		return (pvec.y > platvec.y + (h / 3) );  //if player is only touching top of object
+	}
+
+	IEnumerator Fall() {
+		yield return new WaitForSeconds (parent.GetDelay());
+		r2d2.isKinematic = false;
+		yield return 0;
 	}
 		
 }

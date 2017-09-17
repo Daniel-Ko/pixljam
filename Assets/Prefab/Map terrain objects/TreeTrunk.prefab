@@ -9,17 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1428559517792010}
+  m_RootGameObject: {fileID: 1623498006933286}
   m_IsPrefabParent: 1
---- !u!1 &1428559517792010
+--- !u!1 &1623498006933286
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4308661403346470}
-  - component: {fileID: 212519981988827162}
+  - component: {fileID: 4492662988410746}
+  - component: {fileID: 212313888674323720}
   m_Layer: 0
   m_Name: TreeTrunk
   m_TagString: Untagged
@@ -27,25 +27,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4308661403346470
+--- !u!4 &4492662988410746
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1428559517792010}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.51, y: 10.9, z: 0}
+  m_GameObject: {fileID: 1623498006933286}
+  m_LocalRotation: {x: -0, y: -0.006551017, z: -0, w: 0.99997854}
+  m_LocalPosition: {x: 26.188011, y: 3.3392107, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &212519981988827162
+  m_LocalEulerAnglesHint: {x: 0, y: -0.75100005, z: 0}
+--- !u!212 &212313888674323720
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1428559517792010}
+  m_GameObject: {fileID: 1623498006933286}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -69,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 660902125
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 575de1a04bf0fcd48ac2ec3cf9573823, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
