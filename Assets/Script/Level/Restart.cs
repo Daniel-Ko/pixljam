@@ -14,7 +14,7 @@ public class Restart : MonoBehaviour
 
 	public void RestartGame() {
 		restartLock = true;
-		SceneManager.LoadScene ("NewLevelN");
+		SceneManager.LoadScene ("FINAL LEVEL");
 	}
 }
 

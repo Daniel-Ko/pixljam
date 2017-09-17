@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FINAL LEVEL.unity
     guid: 9d23eeda26b31fb40b9de71c2984d981
+  - enabled: 1
+    path: Assets/EndScreen.unity
+    guid: 115a7737d95f66c4a90585d177f1edbc
+  - enabled: 1
+    path: Assets/Prod.unity
+    guid: 38bdbf927d1ba2e479714d9235b76ceb
