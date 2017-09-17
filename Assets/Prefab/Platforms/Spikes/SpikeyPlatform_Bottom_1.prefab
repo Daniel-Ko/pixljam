@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212295255610376292}
   - component: {fileID: 60228662823921298}
   - component: {fileID: 114745396534030794}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: SpikeyPlatform_Bottom_1
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -169,8 +169,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 679177045
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cfbdfccd0ba65df48996584e2cda9487, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
