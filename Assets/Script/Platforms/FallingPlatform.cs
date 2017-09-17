@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FallingPlatform : MonoBehaviour {
 	private Rigidbody2D r2d2;
-	public float fallDelay = 2;
+	public float delayBeforeDespawn = 4;
 	private FallingLinked parent;
 
 	Vector3 platvec;
@@ -37,6 +37,8 @@ public class FallingPlatform : MonoBehaviour {
 				parent.SetFall (true);
 				parent.setPlayer (player);
 			}
+		} else if(coll.collider.CompareTag ("ground")) {
+			StartCoroutine (Despawn ());
 		}
 	}
 
@@ -51,6 +53,13 @@ public class FallingPlatform : MonoBehaviour {
 		r2d2.isKinematic = false;
 		yield return 0;
 	}
+	IEnumerator Despawn() {
+		r2d2.freezeRotation = true;
+		yield return new WaitForSeconds (parent.GetDelay());
+		Destroy (gameObject, delayBeforeDespawn);
+		yield return 0;
+	}
+
 		
 }
 	

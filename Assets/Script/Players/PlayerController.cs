@@ -123,7 +123,6 @@ public class PlayerController : MonoBehaviour {
     */
 
     public void hurtPlayer(int damage) {
-        Debug.Log("Ouch");
         HP -= damage;
     }
 
