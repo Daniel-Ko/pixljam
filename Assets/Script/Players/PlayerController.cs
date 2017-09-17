@@ -105,10 +105,6 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-		if (Input.GetKey (KeyCode.Q)) {
-			totalWeight = 8;
-		}
-
 		if (totalWeight >= 8) {
 			// Show the tired bird.
 			anim.SetInteger ("AnimState", 1);
