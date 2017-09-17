@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
-    private int HP = 10;
+    public int HP = 10;
     public float playerSpeed;
     public float flyingSpeed;
     public float airSpeedMult = .3f;
