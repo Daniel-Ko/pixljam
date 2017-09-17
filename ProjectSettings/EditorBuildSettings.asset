@@ -23,3 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Prod.unity
     guid: 38bdbf927d1ba2e479714d9235b76ceb
+  - enabled: 1
+    path: Assets/WinningScene.unity
+    guid: 5986d95d0cc6cbf4b8f1d9b302c67147

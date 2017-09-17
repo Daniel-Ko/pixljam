@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KiwiController : MonoBehaviour {
     public int totalWeight;
+    public int bounce;
 
     private PlayerController script = null;
     private bool beingCarried;
@@ -114,7 +115,7 @@ public class KiwiController : MonoBehaviour {
                 BounceAnimation();
                 bouncing = true;
                 Vector2 dir = (Vector2)transform.position;
-                Vector2 bounceDir = new Vector2(dir.x, dir.y * 150);
+                Vector2 bounceDir = new Vector2(dir.x, dir.y * bounce);
                 if (bounceDir.y > max_bounce_y) bounceDir.y = max_bounce_y;
                 if (bounceDir.y < min_bounce_y) bounceDir.y = min_bounce_y;
                 player_script.gameObject.GetComponent<Rigidbody2D>().AddForce(bounceDir);

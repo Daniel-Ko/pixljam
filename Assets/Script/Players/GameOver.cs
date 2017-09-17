@@ -15,10 +15,17 @@ public class GameOver : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (player.HP <= 0 && !loadLock) {
+		if (player.HP <= 0){// && !loadLock) {
 			loadLock = true;
 			SceneManager.LoadScene ("EndScreen");
 			Debug.Log ("?");
 		} 
 	}
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.GetComponent<PlayerController>() != null)
+        {
+            SceneManager.LoadScene("WinningScene");
+        }
+    }
 }
