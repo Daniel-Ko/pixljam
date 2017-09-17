@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114567586125780324}
   - component: {fileID: 60402490604396812}
   - component: {fileID: 50115612110033934}
+  - component: {fileID: 251577562321257220}
   m_Layer: 10
   m_Name: FallingPlatform
   m_TagString: Platform
@@ -87,8 +88,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1746009438949014}
   m_LocalRotation: {x: -0, y: 0.9999386, z: -0, w: -0.011087857}
-  m_LocalPosition: {x: 33.905186, y: 11.995154, z: 308.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.2, y: -5.82, z: 308.49}
+  m_LocalScale: {x: 0.5264149, y: 0.5264149, z: 0.5264149}
   m_Children:
   - {fileID: 4330347239885952}
   - {fileID: 4940825214151572}
@@ -207,7 +208,7 @@ PolygonCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -421,8 +422,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 679177045
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 236e1d6e3875338429b2e30cbda39c21, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -434,3 +435,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!251 &251577562321257220
+PlatformEffector2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1358036495191302}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
