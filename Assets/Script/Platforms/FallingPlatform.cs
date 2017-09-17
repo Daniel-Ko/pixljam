@@ -37,7 +37,7 @@ public class FallingPlatform : MonoBehaviour {
 				parent.SetFall (true);
 				parent.setPlayer (player);
 			}
-		} else if(coll.collider.CompareTag ("ground")) {
+		} else if(coll.collider.CompareTag ("Ground")) {
 			StartCoroutine (Despawn ());
 		}
 	}
