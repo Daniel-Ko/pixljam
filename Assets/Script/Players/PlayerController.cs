@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour {
 
     // An object need to closer than that distance to be picked up.
     public float pickUpDist = 1f;
-    private Transform carriedObject = null;
+    public Transform carriedObject = null;
     public LayerMask pickupLayer;
 
     private Rigidbody2D playersRigidbody;

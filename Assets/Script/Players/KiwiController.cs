@@ -38,6 +38,7 @@ public class KiwiController : MonoBehaviour {
     }
 
     void FixedUpdate() {
+        updateIsBeingCarriedField();
         kiwi_grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
         if (totalWeight >= 10) {
             bounceMode = true;
@@ -98,5 +99,9 @@ public class KiwiController : MonoBehaviour {
 
     public bool isBouncy() {
         return bounceMode;
+    }
+
+    private void updateIsBeingCarriedField() {
+        beingCarried = player_script.carriedObject != null ? true:false;
     }
 }
