@@ -9,6 +9,7 @@ TagManager:
   - Deadly
   - Platform
   - Branch
+  - Ground
   layers:
   - Default
   - TransparentFX

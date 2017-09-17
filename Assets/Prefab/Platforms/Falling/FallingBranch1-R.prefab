@@ -39,7 +39,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4143584123471106}
   - component: {fileID: 50562123429918740}
-  - component: {fileID: 60941619161899482}
   - component: {fileID: 114426248178359790}
   m_Layer: 10
   m_Name: FallingBranch1-R
@@ -297,35 +296,6 @@ PolygonCollider2D:
       - {x: 0.59999996, y: -0.355}
       - {x: 0.91999996, y: -0.24499999}
       - {x: 1.0799999, y: -0.325}
---- !u!60 &60941619161899482
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1137492240661132}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
 --- !u!114 &114008222862386966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -337,6 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7cb03080fd8b564a84491620aea8894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayBeforeDespawn: 4
 --- !u!114 &114375810850953282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -348,7 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24fde086796dc8245b20073fc07ff334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallDelay: 2
+  delayBeforeDespawn: 4
 --- !u!114 &114426248178359790
 MonoBehaviour:
   m_ObjectHideFlags: 1

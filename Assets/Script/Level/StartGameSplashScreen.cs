@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartGameSplashScreen: MonoBehaviour {
 
 	// Scene name that we want to transition into.
-	// TODO: Add scenes that we want to use into the Scene Build.
+
 	public string sceneName;
 
 	private bool loadLock;
