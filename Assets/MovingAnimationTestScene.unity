@@ -421,6 +421,42 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114405407438193016, guid: 1ae0f82ebea82244588368e47064a6ef,
+        type: 2}
+      propertyPath: carriedSprite
+      value: 
+      objectReference: {fileID: 21300002, guid: db51465d917141e40b1d07d82b4f51b2,
+        type: 3}
+    - target: {fileID: 114405407438193016, guid: 1ae0f82ebea82244588368e47064a6ef,
+        type: 2}
+      propertyPath: carriedSprite2
+      value: 
+      objectReference: {fileID: 21300016, guid: db51465d917141e40b1d07d82b4f51b2,
+        type: 3}
+    - target: {fileID: 114405407438193016, guid: 1ae0f82ebea82244588368e47064a6ef,
+        type: 2}
+      propertyPath: carriedSprite3
+      value: 
+      objectReference: {fileID: 21300020, guid: db51465d917141e40b1d07d82b4f51b2,
+        type: 3}
+    - target: {fileID: 114405407438193016, guid: 1ae0f82ebea82244588368e47064a6ef,
+        type: 2}
+      propertyPath: carriedSprite4
+      value: 
+      objectReference: {fileID: 21300024, guid: db51465d917141e40b1d07d82b4f51b2,
+        type: 3}
+    - target: {fileID: 114405407438193016, guid: 1ae0f82ebea82244588368e47064a6ef,
+        type: 2}
+      propertyPath: carriedSprite5
+      value: 
+      objectReference: {fileID: 21300028, guid: db51465d917141e40b1d07d82b4f51b2,
+        type: 3}
+    - target: {fileID: 114405407438193016, guid: 1ae0f82ebea82244588368e47064a6ef,
+        type: 2}
+      propertyPath: normalSprite
+      value: 
+      objectReference: {fileID: 21300004, guid: db51465d917141e40b1d07d82b4f51b2,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ae0f82ebea82244588368e47064a6ef, type: 2}
   m_IsPrefabParent: 0
