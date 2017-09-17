@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114274490772909510}
   m_Layer: 0
   m_Name: SpikeyPlatform_Bottom_3
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   top: 0
   bounceClip: {fileID: 0}
+  bounceBackX: 100
+  bounceBackY: 50
 --- !u!212 &212526673826817082
 SpriteRenderer:
   m_ObjectHideFlags: 1
