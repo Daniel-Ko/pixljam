@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FallingBranch : MonoBehaviour {
 	private Rigidbody2D r2d2;
+	public float delayBeforeDespawn = 4;
 	private FallingLinked parent;
 
 
@@ -38,6 +39,8 @@ public class FallingBranch : MonoBehaviour {
 				parent.SetFall (true);
 				parent.setPlayer (player);
 			}
+		} else if(coll.collider.CompareTag ("ground")) {
+			StartCoroutine (Despawn ());
 		}
 	}
 
@@ -50,7 +53,13 @@ public class FallingBranch : MonoBehaviour {
 	IEnumerator Fall() {
 		yield return new WaitForSeconds (parent.GetDelay());
 		r2d2.isKinematic = false;
-		//GetComponent<PolygonCollider2D> ().isTrigger = true;
+		yield return 0;
+	}
+
+	IEnumerator Despawn() {
+		r2d2.freezeRotation = true;
+		yield return new WaitForSeconds (parent.GetDelay());
+		Destroy (gameObject, delayBeforeDespawn);
 		yield return 0;
 	}
 }
