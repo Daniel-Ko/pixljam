@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 58466662734478430}
   - component: {fileID: 114641367062518902}
   - component: {fileID: 50630352231782250}
+  - component: {fileID: 111182834439815880}
   m_Layer: 12
   m_Name: Bird
   m_TagString: Bird
@@ -53,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1830634215681384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.83, y: 7.11, z: 0}
+  m_LocalPosition: {x: -7.0602417, y: -0.9048748, z: 0}
   m_LocalScale: {x: 0.07749871, y: 0.07749871, z: 0.07749871}
   m_Children:
   - {fileID: 4188475813636354}
@@ -125,6 +126,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!111 &111182834439815880
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1830634215681384}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 635a3cdd6b6455b468f86115f9955ee2, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 635a3cdd6b6455b468f86115f9955ee2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114641367062518902
 MonoBehaviour:
   m_ObjectHideFlags: 1
