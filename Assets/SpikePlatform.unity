@@ -486,11 +486,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4684586440198050, guid: a34dbd9322692f940be4a30a71314870, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.68741816
+      value: -4.71
       objectReference: {fileID: 0}
     - target: {fileID: 4684586440198050, guid: a34dbd9322692f940be4a30a71314870, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.2962432
+      value: 2.71
       objectReference: {fileID: 0}
     - target: {fileID: 4684586440198050, guid: a34dbd9322692f940be4a30a71314870, type: 2}
       propertyPath: m_LocalPosition.z
@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24fde086796dc8245b20073fc07ff334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallDelay: 0
+  delayBeforeDespawn: 4
 --- !u!61 &1278966417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24fde086796dc8245b20073fc07ff334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallDelay: 0
+  delayBeforeDespawn: 4
 --- !u!61 &2083634623
 BoxCollider2D:
   m_ObjectHideFlags: 0

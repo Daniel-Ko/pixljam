@@ -37,10 +37,6 @@ public class FruitPickup : MonoBehaviour {
             Destroy(gameObject);
 
             //script.RenderNormalSprite();
-        } else
-        {
-            KiwiController script = other.GetComponent<KiwiController>();
-            script.setEating(false);
         }
         /*
         else {

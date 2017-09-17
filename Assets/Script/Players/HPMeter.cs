@@ -11,7 +11,7 @@ public class HPMeter : MonoBehaviour {
 	public int iconWidth = 32;
 
 	// Position of the HP on the screen.
-	public Vector2 hpOffset = new Vector2(10,10);
+	public Vector2 hpOffset = new Vector2(-1000, -10);
 
 	// Use this for initialization
 	void Start () {
@@ -36,7 +36,7 @@ public class HPMeter : MonoBehaviour {
 		GUI.DrawTexture (new Rect (x, y, bgW, bgH), background);
 		var newWidth = ((bgW - iconWidth) * percent) + iconWidth;
 		GUI.BeginGroup (new Rect (x, y, newWidth, bgH));
-		GUI.DrawTexture (new Rect (0, 0, bgW, bgH), texture);
+		GUI.DrawTexture (new Rect (0, 0, bgW, bgH ), texture);
 		GUI.EndGroup ();
 	}
 	

@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1283248661629946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.68741816, y: 1.2962432, z: 0}
+  m_LocalPosition: {x: -4.71, y: 2.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a90c434bba876d4aaccb6527227e21e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgTexture: {fileID: 2800000, guid: 407f4d17a1744a146ba46bc66a8c3640, type: 3}
-  hpBar: {fileID: 2800000, guid: 0eb8e50c6a54e9a47ac8aeb40346667d, type: 3}
+  bgTexture: {fileID: 2800000, guid: 7cb0794aeea4d024a93f9e892d43413d, type: 3}
+  hpBar: {fileID: 2800000, guid: ce3187998f4cfac4b89d52aecd7823fc, type: 3}
   iconWidth: 32
-  hpOffset: {x: 10, y: 10}
+  hpOffset: {x: 420, y: -5}
