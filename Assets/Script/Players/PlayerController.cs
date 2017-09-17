@@ -36,7 +36,6 @@ public class PlayerController : MonoBehaviour {
     void FixedUpdate()
     {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
-        Debug.Log(groundCheck);
         //if carrying change ground check to the kiwi
         if (carriedObject != null && carriedObject.tag == "Kiwi")
         {
@@ -155,6 +154,7 @@ public class PlayerController : MonoBehaviour {
     private void drop()
     {
         carriedObject.gameObject.AddComponent<Rigidbody2D>();
+        carriedObject.GetComponent<Rigidbody2D>().freezeRotation = true; 
         carriedObject.parent = null; // Unparenting
         carriedObject.gameObject.AddComponent(typeof(Rigidbody)); // Gravity and co
         carriedObject = null; // Hands are free again

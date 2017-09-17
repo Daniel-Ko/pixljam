@@ -25,7 +25,7 @@ public class KiwiController : MonoBehaviour {
     public bool kiwi_grounded;
     // Use this for initialization
     void Start () {
-        player_script = GameObject.Find("player").GetComponent <PlayerController> ();
+        player_script = GameObject.Find("Bird").GetComponent <PlayerController> ();
     }
 	
 	// Update is called once per frame
@@ -49,14 +49,18 @@ public class KiwiController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D coll)
     {
+        float max_bounce_y = 450;
+        float min_bounce_y = 100;
         if (coll.gameObject.tag == "Platform")
         {
+
             if (bounceMode)
             {
                 Vector2 dir = (Vector2)transform.position;
-                Vector2 bounceDir = new Vector2(dir.x, dir.y * 250);
-                //gameObject.GetComponent<Rigidbody2D>().AddForce(bounceDir);
-                player_script.GetComponent<Rigidbody2D>().AddForce(bounceDir);
+                Vector2 bounceDir = new Vector2(dir.x, dir.y * 150);
+                if (bounceDir.y > max_bounce_y) bounceDir.y = max_bounce_y;
+                if (bounceDir.y < min_bounce_y) bounceDir.y = min_bounce_y;
+                player_script.gameObject.GetComponent<Rigidbody2D>().AddForce(bounceDir);
                 totalWeight = 0;
                 //Renderer rend = GetComponent<Renderer>();
                 //rend.material = (Material)Resources.Load("Materials/KiwiMaterial.physicsMaterial2D");
