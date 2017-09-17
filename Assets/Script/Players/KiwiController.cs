@@ -12,7 +12,8 @@ public class KiwiController : MonoBehaviour {
 
     public Sprite normalSprite;
     public Sprite eatingSprite;
-    public int eatingDelay;
+    public float eatingDelay;
+    private Animator anim;
   
     //Main players script
     private  PlayerController player_script;
@@ -26,6 +27,7 @@ public class KiwiController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         player_script = GameObject.Find("Bird").GetComponent <PlayerController> ();
+        anim = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
@@ -56,6 +58,9 @@ public class KiwiController : MonoBehaviour {
 
             if (bounceMode)
             {
+                BounceAnimation();
+                //anim.Play("Bouncing");
+                //WaitForSeconds(eatingDelay);
                 Vector2 dir = (Vector2)transform.position;
                 Vector2 bounceDir = new Vector2(dir.x, dir.y * 150);
                 if (bounceDir.y > max_bounce_y) bounceDir.y = max_bounce_y;
@@ -66,6 +71,15 @@ public class KiwiController : MonoBehaviour {
                 //rend.material = (Material)Resources.Load("Materials/KiwiMaterial.physicsMaterial2D");
             }
         }
+    }
+
+    public void BounceAnimation() {
+        StartCoroutine("BounceKiwiAnimationCo");
+    }
+
+    public IEnumerator BounceKiwiAnimationCo() {
+        anim.Play("Bouncing");
+        yield return new WaitForSeconds(eatingDelay);
     }
 
     public void RenderEatingSprite() {

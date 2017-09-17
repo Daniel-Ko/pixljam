@@ -142,6 +142,7 @@ public class PlayerController : MonoBehaviour {
             {
                 GetComponent<Rigidbody2D>().mass = newWeightOfPlayer;
             }
+            totalWeight = weightOfKiwi;
         }
     }
 

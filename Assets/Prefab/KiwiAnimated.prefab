@@ -41,10 +41,9 @@ GameObject:
   - component: {fileID: 212071027646309284}
   - component: {fileID: 114405407438193016}
   - component: {fileID: 95613225506486840}
-  - component: {fileID: 50686318412344112}
-  - component: {fileID: 58206217675770146}
   - component: {fileID: 114678552112144936}
   - component: {fileID: 58318864437443400}
+  - component: {fileID: 50925008481017146}
   m_Layer: 8
   m_Name: KiwiAnimated
   m_TagString: Kiwi
@@ -74,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1955361826110614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2504678, y: 1.5686256, z: 0.046064854}
+  m_LocalPosition: {x: -0.91, y: -2.77, z: 0.046064854}
   m_LocalScale: {x: 0.9542616, y: 0.9542617, z: 0.9539351}
   m_Children: []
   m_Father: {fileID: 4838004196271486}
@@ -100,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1153812693529198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.65, y: 2.95, z: 0}
+  m_LocalPosition: {x: -0.76, y: 2.56, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 4134718827550044}
@@ -144,7 +143,7 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
---- !u!50 &50686318412344112
+--- !u!50 &50925008481017146
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -164,21 +163,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58206217675770146
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153812693529198}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 5
 --- !u!58 &58318864437443400
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -239,7 +223,7 @@ MonoBehaviour:
   totalWeight: 0
   normalSprite: {fileID: 0}
   eatingSprite: {fileID: 0}
-  eatingDelay: 0
+  eatingDelay: 1
   groundCheck: {fileID: 4134718827550044}
   groundCheckRadius: 0.2
   whatIsGround:
