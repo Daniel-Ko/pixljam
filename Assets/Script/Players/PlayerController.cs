@@ -81,7 +81,8 @@ public class PlayerController : MonoBehaviour {
         {
             if (absValueX < playerSpeed)
             {
-                forceX = grounded ? playerSpeed: (playerSpeed*airSpeedMult);
+                forceX = grounded ? playerSpeed : (playerSpeed * airSpeedMult);
+                
             }
         }
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
@@ -89,6 +90,7 @@ public class PlayerController : MonoBehaviour {
             if (absValueX < playerSpeed)
             {
                 forceX = grounded ? -playerSpeed : (-playerSpeed * airSpeedMult);
+           
             }
         }
 
