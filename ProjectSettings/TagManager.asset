@@ -8,6 +8,7 @@ TagManager:
   - Bird
   - Deadly
   - Platform
+  - Branch
   layers:
   - Default
   - TransparentFX
@@ -19,9 +20,9 @@ TagManager:
   - 
   - Pickup
   - ground
-  - 
-  - 
-  - 
+  - Platform
+  - Branch
+  - Player
   - 
   - 
   - 
@@ -44,4 +45,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 607768583
+    locked: 0
+  - name: Tree
+    uniqueID: 660902125
+    locked: 0
+  - name: Branch
+    uniqueID: 55926233
+    locked: 0
+  - name: Platform
+    uniqueID: 679177045
+    locked: 0
+  - name: Fruit
+    uniqueID: 2690997771
+    locked: 0
+  - name: Player
+    uniqueID: 23343117
+    locked: 0
+  - name: Kiwi
+    uniqueID: 2496045467
     locked: 0

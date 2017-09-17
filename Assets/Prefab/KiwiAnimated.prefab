@@ -221,9 +221,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalWeight: 0
-  normalSprite: {fileID: 0}
+  normalSprite: {fileID: 21300004, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
   eatingSprite: {fileID: 0}
   eatingDelay: 1
+  carriedSprite: {fileID: 21300002, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  carriedSprite2: {fileID: 21300016, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  carriedSprite3: {fileID: 21300020, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  carriedSprite4: {fileID: 21300024, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
+  carriedSprite5: {fileID: 21300028, guid: db51465d917141e40b1d07d82b4f51b2, type: 3}
   groundCheck: {fileID: 4134718827550044}
   groundCheckRadius: 0.2
   whatIsGround:
