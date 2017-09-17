@@ -12,12 +12,12 @@ O to let him go
 
 
 Made by:
-- Arnold Darel (coder)
-- Calvin Lai (http://calvinlai.design/)
-- Daniel Ko (coder)
-- Jeremy Southon (coder)
+- Arnold Darel (coder) https://github.com/bluetempo
+- Calvin Lai (designer) http://calvinlai.design/
+- Daniel Ko (coder) https://github.com/Daniel-Ko
+- Jeremy Southon (coder) https://github.com/southojere
 - Natasha Joe (designer)
-- Yi Sian Lim (coder)
+- Yi Sian Lim (coder) https://github.com/yisianlim
 
 
 Game theme: Blessing in Disguise
