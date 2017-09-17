@@ -7,6 +7,7 @@ public class FallingLinked : MonoBehaviour {
 	public float fallDelay = 2;
 	private bool isFalling = false;
 	private PlayerController player;
+	private FallingBranch branch;
 
 	Vector3 platvec;
 	float w;
@@ -16,14 +17,27 @@ public class FallingLinked : MonoBehaviour {
 	void Start () {
 		r2d2 = GetComponent<Rigidbody2D> ();
 		r2d2.isKinematic = true;
+
+		foreach (Transform child in transform) {
+			if(child.gameObject.tag == "Branch") {
+				branch = (FallingBranch)child.GetComponent<FallingBranch> ();
+			}
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(isFalling) {
 			SetPlatformFallDelay (player); //make the platform fall according to weight of player
-			StartCoroutine (Fall ()); //make the platform fall
 		}
+	}
+
+	public float GetDelay() {
+		return fallDelay;
+	}
+
+	public bool IsFalling() {
+		return isFalling;
 	}
 
 	//called by children
@@ -38,13 +52,6 @@ public class FallingLinked : MonoBehaviour {
 		player = pc;
 	}
 		
-
-	IEnumerator Fall() {
-		yield return new WaitForSeconds (fallDelay);
-		r2d2.isKinematic = false;
-		GetComponent<PolygonCollider2D> ().isTrigger = true;
-		yield return 0;
-	}
 
 	void SetPlatformFallDelay(PlayerController player) {
 		if (player == null)
