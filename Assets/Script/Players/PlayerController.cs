@@ -104,6 +104,19 @@ public class PlayerController : MonoBehaviour {
                 //if we have ^^ then the mass wont effect the jump therefore might work better to do fourceY=..
             }
         }
+
+		if (Input.GetKey (KeyCode.Q)) {
+			totalWeight = 8;
+		}
+
+		if (totalWeight >= 8) {
+			// Show the tired bird.
+			anim.SetInteger ("AnimState", 1);
+		} else {
+			// Show the usual bird.
+			anim.SetInteger ("AnimState", 0);
+		}
+
         GetComponent<Rigidbody2D>().AddForce(new Vector2(forceX,forceY));
         //anim.SetFloat("speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
     }

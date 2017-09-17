@@ -11,9 +11,7 @@ public class BounceAnimationController : MonoBehaviour {
         anim = GetComponent<Animator>();
 	}
 
-    private void FixedUpdate()
-    {
-
+    private void FixedUpdate() {
         
     }
 
@@ -23,9 +21,11 @@ public class BounceAnimationController : MonoBehaviour {
 	}
 
     private void OnTriggerEnter2D(Collider2D other) {
+        // NEED TO CHANGE SO IT PLAYS BEFORE BOUNCING
         if(other.GetComponent<FruitPickup>()!= null) {
-            bounceAnimation.Play();
-            anim.SetBool("eating", true);
+            //bounceAnimation.Play();
+            //anim.SetBool("eating", true);
+            anim.Play("Eating");
         }
     }
 }
